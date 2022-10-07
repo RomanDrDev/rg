@@ -202,8 +202,12 @@ let imageSlider = new Swiper('.image-slider', {
    autoHeight: false,
    slidesPerView: 1,
    watchOverflow: true,
-   preloadImages: true,
-   updateOnImagesReady: true,
+   preloadImages: false,
+   lazy: {
+      loadPrevNext: true,
+   },
+   watchSlidesProgress: true,
+   watchSlidesVisibility: true,
    initialSlide: 0,
    // Превью
    thumbs: {
@@ -229,6 +233,10 @@ let imageSlider = new Swiper('.image-slider', {
             },
          }
       }
+   },
+   autoplay: {
+      delay: 2000,
+      stopOnLastSlide: true,
    },
    keyboard: {
       enabled: true,
