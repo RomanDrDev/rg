@@ -4,36 +4,60 @@ let processSwiper = new Swiper('.process__slider', {
    breakpoints: {
       320: {
          slidesPerView: 2,
-         spaceBetween: 10
+         spaceBetween: 10,
+         grid: {
+            rows: 2,
+            fill: 'row',
+         },
       },
       480: {
          slidesPerView: 2,
-         spaceBetween: 10
+         spaceBetween: 10,
+         grid: {
+            rows: 2,
+            fill: 'row',
+         },
       },
       575: {
          slidesPerView: 2,
-         spaceBetween: 20
+         spaceBetween: 20,
+         grid: {
+            rows: 2,
+            fill: 'row',
+         },
       },
       640: {
          slidesPerView: 5,
          spaceBetween: 5,
          cssMode: true,
+         grid: {
+            rows: 2,
+            fill: 'row',
+         },
       },
       768: {
          slidesPerView: 5,
          spaceBetween: 10,
          cssMode: true,
+         grid: {
+            rows: 2,
+            fill: 'row',
+         },
       },
       1024: {
          slidesPerView: 5,
          spaceBetween: 15,
          cssMode: true,
+         grid: {
+            rows: 2,
+            fill: 'row',
+         },
       }
    },
-   grid: {
-      rows: 2,
-      fill: 'row',
-   },
+   // grid: {
+   //    rows: 2,
+   //    fill: 'row',
+   // },
    autoHeight: false,
    navigation: {
       nextEl: '.swiper-button-next.process__btn-next',
@@ -47,42 +71,69 @@ let processSwiper = new Swiper('.process__slider', {
    mousewheel: {
       sensitivity: 1,
    },
+   observer: true,
+   observeParents: true,
+   observeSlideChildren: true,
 });
 
 let projectsSwiper = new Swiper('.projects__slider', {
    breakpoints: {
       320: {
          slidesPerView: 2,
-         spaceBetween: 15
+         spaceBetween: 15,
+         grid: {
+            rows: 2,
+            fill: 'row'
+         },
       },
       480: {
          slidesPerView: 2,
-         spaceBetween: 20
+         spaceBetween: 20,
+         grid: {
+            rows: 2,
+            fill: 'row'
+         },
       },
       575: {
          slidesPerView: 2,
-         spaceBetween: 30
+         spaceBetween: 30,
+         grid: {
+            rows: 2,
+            fill: 'row'
+         },
       },
       640: {
          slidesPerView: 3,
          spaceBetween: 10,
          cssMode: true,
+         grid: {
+            rows: 2,
+            fill: 'row'
+         },
       },
       768: {
          slidesPerView: 3,
          spaceBetween: 30,
          cssMode: true,
+         grid: {
+            rows: 2,
+            fill: 'row'
+         },
       },
       1024: {
          slidesPerView: 3,
          spaceBetween: 45,
          cssMode: true,
+         grid: {
+            rows: 2,
+            fill: 'row'
+         },
       }
    },
-   grid: {
-      rows: 2,
-      fill: 'row'
-   },
+   // grid: {
+   //    rows: 2,
+   //    fill: 'row'
+   // },
    autoHeight: false,
    watchOverflow: true,
    navigation: {
@@ -97,6 +148,9 @@ let projectsSwiper = new Swiper('.projects__slider', {
    mousewheel: {
       sensitivity: 1,
    },
+   observer: true,
+   observeParents: true,
+   observeSlideChildren: true,
 });
 
 
