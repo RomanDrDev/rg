@@ -234,10 +234,6 @@ let imageSlider = new Swiper('.image-slider', {
          }
       }
    },
-   autoplay: {
-      delay: 2000,
-      stopOnLastSlide: true,
-   },
    keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -246,77 +242,4 @@ let imageSlider = new Swiper('.image-slider', {
    mousewheel: {
       sensitivity: 1,
    },
-   cssMode: true,
 });
-
-// const slider = document.querySelector('.projects__slider');
-
-// let myProjectsSwiper;
-
-// function mobileSlider() {
-//    if (window.innerWidth <= 575.98 && slider.dataset.mobile == 'false') {
-//       myProjectsSwiper = new Swiper(slider, {
-//          breakpoints: {
-//             320: {
-//                slidesPerView: 2,
-//                spaceBetween: 15
-//             },
-//             480: {
-//                slidesPerView: 2,
-//                spaceBetween: 20
-//             },
-//             575: {
-//                slidesPerView: 2,
-//                spaceBetween: 30
-//             },
-//             640: {
-//                slidesPerView: 4,
-//                spaceBetween: 10
-//             },
-//             768: {
-//                slidesPerView: 4,
-//                spaceBetween: 20
-//             },
-//             1024: {
-//                slidesPerView: 4,
-//                spaceBetween: 30
-//             }
-//          },
-//          grid: {
-//             rows: 2,
-//             fill: 'row'
-//          },
-//          autoHeight: false,
-//          watchOverflow: true,
-//          navigation: {
-//             nextEl: '.swiper-button-next.projects__btn-next',
-//             prevEl: '.swiper-button-prev.projects__btn-prev'
-//          },
-//          keyboard: {
-//             enabled: true,
-//             onlyInViewport: true,
-//             pageUpDown: true,
-//          },
-//          mousewheel: {
-//             sensitivity: 1,
-//          },
-//       });
-
-//       slider.dataset.mobile = 'true';
-//    }
-
-//    if (window.innerWidth > 575.98) {
-//       slider.dataset.mobile = 'false';
-
-//       if (slider.classList.contains('swiper-initialized')) {
-//          myProjectsSwiper.destroy();
-//       }
-
-//    }
-// }
-
-// mobileSlider();
-
-// window.addEventListener('resize', () => {
-//    mobileSlider();
-// });
