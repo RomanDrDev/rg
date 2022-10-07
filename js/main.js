@@ -1,5 +1,8 @@
 // Инициализируем Swiper
 
+document.addEventListener('DOMContentLoaded', function(){
+   setTimeout(() => {
+
 let processSwiper = new Swiper('.process__slider', {
    breakpoints: {
       320: {
@@ -311,3 +314,6 @@ let imageSlider = new Swiper('.image-slider', {
 // window.addEventListener('resize', () => {
 //    mobileSlider();
 // });
+
+}, 1000);
+})
