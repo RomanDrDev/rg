@@ -202,7 +202,7 @@ let imageSlider = new Swiper('.image-slider', {
    autoHeight: false,
    slidesPerView: 1,
    watchOverflow: true,
-   preloadImages: false,
+   preloadImages: true,
    lazy: {
       loadPrevNext: true,
    },
