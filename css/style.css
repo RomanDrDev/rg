@@ -177,6 +177,10 @@ body.lock {
    color: #85A78B;
 }
 
+.menu__link:target {
+   scroll-margin-top: 200px;
+}
+
 .socials {
    position: relative;
    z-index: 3;
@@ -2216,9 +2220,15 @@ span.quiz__hide {
    align-self: flex-end;
 }
 
+
 .quiz__buttons {
    display: flex;
    justify-content: space-between;
+}
+
+.quiz__next.disabled {
+   pointer-events: none;
+   opacity: 0.4;
 }
 
 .step-1 .quiz__next {
