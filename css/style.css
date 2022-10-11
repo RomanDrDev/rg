@@ -245,7 +245,7 @@ body.lock {
 
 .button_fill {
    background-color: #85A78B;
-   padding: 20px 38px;
+   padding: 20px 38px 18px;
 }
 
 .button_fill:hover {
@@ -1025,6 +1025,14 @@ textarea:focus {
       padding: 3px 15px 3px 4px;
    }
 
+   .button_fill:hover {
+      border: 2px solid #B8DBEF;
+   }
+
+   .button_fill:focus {
+      border: 2px solid #FDFFFE;
+   }
+
    .card__image {
       margin-bottom: 8px;
    }
@@ -1686,6 +1694,10 @@ textarea:focus {
       font-size: 16px;
       line-height: 120%;
       margin-bottom: 40px;
+   }
+
+   .started__button-quiz {
+      margin: 0px 5px 0px 0px;
    }
 }
 
