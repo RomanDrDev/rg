@@ -14,13 +14,13 @@
 
 <body>
    <div class="wrapper">
-      <header id="open" class="header">
+      <header id="open" class="header lock-padding">
          <div id="close" class="header__container">
             <a href="#" class="header__logo">
                <img src="./img/logo.svg" alt="Логотип">
             </a>
             <div class="header__menu menu">
-               <nav class="menu__body">
+               <nav class="menu__body lock-padding">
                   <ul class="menu__list">
                      <li class="menu__item">
                         <a href="#about" class="menu__link">О компании</a>
@@ -67,7 +67,7 @@
                      Доставка по Республике Татарстан бесплатно.</p>
                   <div class="started__buttons">
                      <a href="#quiz" class="started__button-quiz button button_fill">калькулятор стоимости</a>
-                     <a href="#" class="started__button button">оставить заявку</a>
+                     <a href="#application-popup" class="started__button button popup-link">оставить заявку</a>
                   </div>
                </div>
                <div class="started__image">
@@ -136,7 +136,7 @@
             <div class="quiz__container">
                <h2 class="quiz__title title">Калькулятор стоимости</h2>
                <div class="quiz__box">
-                  <div class="quiz__test step-1  active__step">
+                  <div class="quiz__test step-1 active__step" data-step="1">
                      <div class="quiz__header">
                         <p class="quiz__text">Ответь на 5 вопросов и получи подарок!</p>
                         <div class="quiz__stage stage-quiz">
@@ -153,7 +153,7 @@
                      <h3 class="quiz__question">Какой объект будем строить?</h3>
                      <form action="#" class="quiz__form">
                         <div class="quiz__radio-wrap">
-                           <div class="quiz__radio-item radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-1/house.png" alt="Жилой дом">
                               </div>
@@ -165,7 +165,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-1/garage.png" alt="Гараж">
                               </div>
@@ -177,7 +177,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-1/outbuildings.png" alt="Хозпостройка">
                               </div>
@@ -190,13 +190,15 @@
                               </div>
                            </div>
                         </div>
-                        <a href="#" class="quiz__next button button_next jsTestNextQuestion">
-                           <span>Далее</span>
-                           <img src="./img/process/arrow.svg" alt="Стрелка вперед">
-                        </a>
+                        <div class="quiz__button">
+                           <a href="#quiz" class="quiz__next button button_next">
+                              <span>Далее</span>
+                              <img src="./img/process/arrow.svg" alt="Стрелка вперед">
+                           </a>
+                        </div>
                      </form>
                   </div>
-                  <div class="quiz__test step-2">
+                  <div class="quiz__test step-2" data-step="2">
                      <div class="quiz__header">
                         <p class="quiz__text">Ответь на 5 вопросов и получи подарок!</p>
                         <div class="quiz__stage stage-quiz">
@@ -213,7 +215,7 @@
                      <h3 class="quiz__question">Выберите площадь</h3>
                      <form action="#" class="quiz__form">
                         <div class="quiz__radio-wrap">
-                           <div class="quiz__radio-item radio radio_row jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_row">
                               <div class="quiz__radio">
                                  <input id="tiny-square" type="radio" value="до 20 м²" name="square"
                                     class="quiz__radio-input radio__input">
@@ -222,7 +224,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio radio_row jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_row">
                               <div class="quiz__radio">
                                  <input id="small-square" type="radio" value="30–60 м²" name="square"
                                     class="quiz__radio-input radio__input">
@@ -231,7 +233,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio radio_row jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_row">
                               <div class="quiz__radio">
                                  <input id="medium-square" type="radio" value="60–90 м²" name="square"
                                     class="quiz__radio-input radio__input">
@@ -240,7 +242,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio radio_row jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_row">
                               <div class="quiz__radio">
                                  <input id="large-square" type="radio" value="90–150 м²" name="square"
                                     class="quiz__radio-input radio__input">
@@ -249,7 +251,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio radio_row jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_row">
                               <div class="quiz__radio">
                                  <input id="huge-square" type="radio" value="более 150 м²" name="square"
                                     class="quiz__radio-input radio__input">
@@ -260,18 +262,18 @@
                            </div>
                         </div>
                         <div class="quiz__buttons">
-                           <a href="#" class="quiz__prev button button_prev jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__prev button button_prev">
                               <img src="./img/process/arrow.svg" alt="Стрелка назад">
                               <span>Назад</span>
                            </a>
-                           <a href="#" class="quiz__next button button_next jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__next button button_next">
                               <span>Далее</span>
                               <img src="./img/process/arrow.svg" alt="Стрелка вперед">
                            </a>
                         </div>
                      </form>
                   </div>
-                  <div class="quiz__test step-3">
+                  <div class="quiz__test step-3" data-step="3">
                      <div class="quiz__header">
                         <p class="quiz__text">Ответь на 5 вопросов и получи подарок!</p>
                         <div class="quiz__stage stage-quiz">
@@ -288,7 +290,7 @@
                      <h3 class="quiz__question">Тип фундамента</h3>
                      <form action="#" class="quiz__form">
                         <div class="quiz__radio-wrap">
-                           <div class="quiz__radio-item quiz__radio-item_1 radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item quiz__radio-item_1 radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-3/pile-screw.png"
                                     alt="Фото свайно-винтового типа фундамента">
@@ -301,7 +303,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item quiz__radio-item_2 radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item quiz__radio-item_2 radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-3/driving-piles.png"
                                     alt="Фото типа фундамента: забивные сваи">
@@ -314,7 +316,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio quiz__radio-item_3 radio_img jsRadioSelector">
+                           <div class="quiz__radio-item radio quiz__radio-item_3 radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-3/ribbon.png" alt="Фото ленточного типа фундамента">
                               </div>
@@ -326,7 +328,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item quiz__radio-item_4 radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item quiz__radio-item_4 radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-3/slab.png" alt="Фото плитного типа фундамента">
                               </div>
@@ -338,7 +340,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item quiz__radio-item_5 radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item quiz__radio-item_5 radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-3/fill-piles.png" alt="Фото типа фундамента: заливные сваи">
                               </div>
@@ -352,18 +354,18 @@
                            </div>
                         </div>
                         <div class="quiz__buttons">
-                           <a href="#" class="quiz__prev button button_prev jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__prev button button_prev">
                               <img src="./img/process/arrow.svg" alt="Стрелка назад">
                               <span>Назад</span>
                            </a>
-                           <a href="#" class="quiz__next button button_next jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__next button button_next">
                               <span>Далее</span>
                               <img src="./img/process/arrow.svg" alt="Стрелка вперед">
                            </a>
                         </div>
                      </form>
                   </div>
-                  <div class="quiz__test step-4 ">
+                  <div class="quiz__test step-4" data-step="4">
                      <div class="quiz__header">
                         <p class="quiz__text">Ответь на 5 вопросов и получи подарок!</p>
                         <div class="quiz__stage stage-quiz">
@@ -380,7 +382,7 @@
                      <h3 class="quiz__question">Кровля</h3>
                      <form action="#" class="quiz__form">
                         <div class="quiz__radio-wrap">
-                           <div class="quiz__radio-item quiz__radio-item_1 radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item quiz__radio-item_1 radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-4/metal-tile.png" alt="Металлочерепица">
                               </div>
@@ -392,7 +394,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item quiz__radio-item_2 radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item quiz__radio-item_2 radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-4/profiled-sheet.png" alt="Профлист">
                               </div>
@@ -404,7 +406,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item quiz__radio-item_3 radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item quiz__radio-item_3 radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-4/PVC-membranes.png" alt="ПВХ-мембраны">
                               </div>
@@ -416,7 +418,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item quiz__radio-item_4 radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item quiz__radio-item_4 radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-4/soft-shingles.png" alt="Мягкая черепица">
                               </div>
@@ -430,18 +432,18 @@
                            </div>
                         </div>
                         <div class="quiz__buttons">
-                           <a href="#" class="quiz__prev button button_prev jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__prev button button_prev">
                               <img src="./img/process/arrow.svg" alt="Стрелка назад">
                               <span>Назад</span>
                            </a>
-                           <a href="#" class="quiz__next button button_next jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__next button button_next">
                               <span>Далее</span>
                               <img src="./img/process/arrow.svg" alt="Стрелка вперед">
                            </a>
                         </div>
                      </form>
                   </div>
-                  <div class="quiz__test step-5">
+                  <div class="quiz__test step-5" data-step="5">
                      <div class="quiz__header">
                         <p class="quiz__text">Ответь на 5 вопросов и получи подарок!</p>
                         <div class="quiz__stage stage-quiz">
@@ -459,7 +461,7 @@
                      <form action="#" class="quiz__form">
                         <div class="quiz__radio-wrap">
                            <div class="quiz__radio-item quiz__radio-item_1 quiz__radio-item_checkbox">
-                              <div class="radio radio_img jsRadioSelector">
+                              <div class="radio radio_img">
                                  <div class="quiz__image radio__image">
                                     <img src="./img/quiz/step-5/ventilation.png" alt="Вентиляция">
                                  </div>
@@ -474,7 +476,7 @@
                               </div>
                            </div>
                            <div class="quiz__radio-item quiz__radio-item_2 quiz__radio-item_checkbox">
-                              <div class="radio radio_img jsRadioSelector">
+                              <div class="radio radio_img">
                                  <div class="quiz__image radio__image">
                                     <img src="./img/quiz/step-5/electrics.png" alt="Электрика">
                                  </div>
@@ -489,7 +491,7 @@
                               </div>
                            </div>
                            <div class="quiz__radio-item quiz__radio-item_3 quiz__radio-item_checkbox">
-                              <div class="radio radio_img jsRadioSelector">
+                              <div class="radio radio_img">
                                  <div class="quiz__image radio__image">
                                     <img src="./img/quiz/step-5/water-disposal.png" alt="Водоотведение">
                                  </div>
@@ -504,7 +506,7 @@
                               </div>
                            </div>
                            <div class="quiz__radio-item quiz__radio-item_4 quiz__radio-item_checkbox">
-                              <div class="radio radio_img jsRadioSelector">
+                              <div class="radio radio_img">
                                  <div class="quiz__image radio__image">
                                     <img src="./img/quiz/step-5/facade.png" alt="Фасад здания">
                                  </div>
@@ -519,7 +521,7 @@
                               </div>
                            </div>
                            <div class="quiz__radio-item quiz__radio-item_5 quiz__radio-item_checkbox">
-                              <div class="radio radio_img jsRadioSelector">
+                              <div class="radio radio_img">
                                  <div class="quiz__image radio__image">
                                     <img src="./img/quiz/step-5/heating.png" alt="Отопление">
                                  </div>
@@ -534,7 +536,7 @@
                               </div>
                            </div>
                            <div class="quiz__radio-item quiz__radio-item_6 quiz__radio-item_checkbox">
-                              <div class="radio radio_img jsRadioSelector">
+                              <div class="radio radio_img">
                                  <div class="quiz__image radio__image">
                                     <img src="./img/quiz/step-5/water-supply.png" alt="Водоснабжение">
                                  </div>
@@ -550,22 +552,22 @@
                            </div>
                         </div>
                         <div class="quiz__buttons">
-                           <a href="#" class="quiz__prev button button_prev jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__prev button button_prev">
                               <img src="./img/process/arrow.svg" alt="Стрелка назад">
                               <span>Назад</span>
                            </a>
-                           <a href="#" class="quiz__next button button_next jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__next button button_next">
                               <span>Далее</span>
                               <img src="./img/process/arrow.svg" alt="Стрелка вперед">
                            </a>
                         </div>
                      </form>
                   </div>
-                  <div class="quiz__test step-6">
+                  <div class="quiz__test step-6" data-step="6">
                      <h3 class="quiz__question">Выберите свой подарок</h3>
                      <form action="#" class="quiz__form">
                         <div class="quiz__radio-wrap">
-                           <div class="quiz__radio-item radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-6/drainage-system.png" alt="Водосточная система">
                               </div>
@@ -577,7 +579,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-6/hemming-the-roof.png" alt="Подшив кровли">
                               </div>
@@ -590,7 +592,7 @@
                                  </label>
                               </div>
                            </div>
-                           <div class="quiz__radio-item radio radio_img jsRadioSelector">
+                           <div class="quiz__radio-item radio radio_img">
                               <div class="quiz__image radio__image">
                                  <img src="./img/quiz/step-6/windows-front-door.jpg" alt="Окна и входная дверь">
                               </div>
@@ -605,11 +607,11 @@
                            </div>
                         </div>
                         <div class="quiz__buttons">
-                           <a href="#" class="quiz__prev button button_prev jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__prev button button_prev">
                               <img src="./img/process/arrow.svg" alt="Стрелка назад">
                               <span>Назад</span>
                            </a>
-                           <a href="#" class="quiz__next button button_next jsTestNextQuestion">
+                           <a href="#quiz" class="quiz__next quiz__next_final button button_next ">
                               <span>Далее</span>
                               <img src="./img/process/arrow.svg" alt="Стрелка вперед">
                            </a>
@@ -617,7 +619,7 @@
                      </form>
                   </div>
                </div>
-               <div class="quiz__result">
+               <div class="quiz__result step-7" data-step="7">
                   <div class="quiz__wrap quiz__wrap_blur">
                      <div class="quiz__wrap-widget">
                         <div class="quiz__widget">
@@ -626,7 +628,8 @@
                      </div>
                      <form id="quiz__feedback" action="#" class="quiz__feedback form">
                         <div class=" form__wrap">
-                           <h3 class="form__title">Ваши результаты получены<span> и мы уже приступили к расчету</span>!
+                           <h3 class="form__title">Ваши результаты получены<span> и мы уже приступили к
+                                 расчету</span>!
                            </h3>
                            <fieldset class="form__box">
                               <legend class="form__subtitle">Куда вам отправить информацию?</legend>
@@ -659,7 +662,7 @@
                            </fieldset>
                            <div class="form__inner-box">
                               <div class="form__input">
-                                 <input type="tel" placeholder="Ваш телефон">
+                                 <input type="tel" placeholder="Ваш телефон" name="tel">
                               </div>
                               <button type="submit" class="form__button button button_white">Получить
                                  каталог</button>
@@ -677,7 +680,6 @@
                         </div>
                      </form>
                   </div>
-
                </div>
                <p class="quiz__slogan">Уже через 35* дней у вас будет <span>свой дом!</span></p>
             </div>
@@ -692,54 +694,104 @@
                <div class="process__slider swiper">
                   <div class="process__wrapper swiper-wrapper">
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/1.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_1" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/1-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/1-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/1.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/1.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/2.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_2" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/2-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/2-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/2.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/2.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/3.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_3" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/3-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/3-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/3.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/3.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/4.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_4" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/4-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/4-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/4.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/4.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/5.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_5" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/5-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/5-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/5.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/5.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/6.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_6" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/6-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/6-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/6.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/6.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/7.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_7" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/7-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/7-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/7.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/7.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/8.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_8" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/8-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/8-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/8.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/8.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/9.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_9" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/9-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/9-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/9.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/9.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <div class="process__image swiper-slide__image">
-                           <img src="./img/process/10.png" alt="Фото процесса строительства объекта">
-                        </div>
+                        <a href="#process-image-popup_10" class="popup-link swiper-slide__image">
+                           <picture class="process__image">
+                              <source srcset="./img/process/10-1530w.webp" type="image/webp">
+                              <source srcset="./img/process/10-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                              <source srcset="./img/process/10.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <img src="./img/process/10.jpg" alt="Фото процесса строительства объекта">
+                           </picture>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -755,86 +807,128 @@
                   <div class="projects__slider swiper">
                      <div class="projects__wrapper swiper-wrapper">
                         <div class="projects__slide card swiper-slide">
-                           <div class="card__image">
-                              <img src="./img/projects/Maktama.png" alt="Проект Мактама">
-                           </div>
+                           <a href="#projects-image-popup_maktama" class="popup-link swiper-slide__image">
+                              <picture class="card__image">
+                                 <source srcset="./img/projects/maktama/1-maktama@2px.webp" type="image/webp">
+                                 <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg"
+                                    media="min-width:1330px">
+                                 <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg"
+                                    media="max-width:640.98px">
+                                 <img src="./img/projects/maktama/1-maktama.jpg" alt="Проект Мактама">
+                              </picture>
+                           </a>
                            <div class="card__body">
                               <h3 class="card__title">Проект Мактама</h3>
                               <p class="card__desc">Общая площадь 85,3 м²</p>
                               <div class="card__inner">
                                  <div class="card__price">от 1 500 000 ₽</div>
-                                 <a href="./projects-pages/maktama-page.html"
-                                    class="card__button button button_narrow">подробнее</a>
+                                 <a href="#maktama-project-popup"
+                                    class="card__button button button_narrow popup-link">подробнее</a>
                               </div>
                            </div>
                         </div>
                         <div class="projects__slide card swiper-slide">
-                           <div class="card__image">
-                              <img src="./img/projects/Bulgar.png" alt="Проект Булгар">
-                           </div>
+                           <a href="#projects-image-popup_bulgar" class="popup-link swiper-slide__image">
+                              <picture class="card__image">
+                                 <source srcset="./img/projects/bulgar/2-bulgar@2px.webp" type="image/webp">
+                                 <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg"
+                                    media="min-width:1330px">
+                                 <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg"
+                                    media="max-width:640.98px">
+                                 <img src="./img/projects/bulgar/2-bulgar.jpg" alt="Проект Булгар">
+                              </picture>
+                           </a>
                            <div class="card__body">
                               <h3 class="card__title">Проект Булгар</h3>
                               <p class="card__desc">Общая площадь 89,2 м²</p>
                               <div class="card__inner">
                                  <div class="card__price">от 1 500 000 ₽</div>
-                                 <a href="./projects-pages/bulgar-page.html"
-                                    class="card__button button button_narrow">подробнее</a>
+                                 <a href="#bulgar-project-popup"
+                                    class="card__button button button_narrow popup-link">подробнее</a>
                               </div>
                            </div>
                         </div>
                         <div class="projects__slide card swiper-slide">
-                           <div class="card__image">
-                              <img src="./img/projects/Alma.png" alt="Проект Альма">
-                           </div>
+                           <a href="#projects-image-popup_alma" class="popup-link swiper-slide__image">
+                              <picture class="card__image">
+                                 <source srcset="./img/projects/alma/3-alma@2px.webp" type="image/webp">
+                                 <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg"
+                                    media="min-width:1330px">
+                                 <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg"
+                                    media="max-width:640.98px">
+                                 <img src="./img/projects/alma/3-alma.jpg" alt="Проект Альма">
+                              </picture>
+                           </a>
                            <div class="card__body">
                               <h3 class="card__title">Проект Альма</h3>
                               <p class="card__desc">Общая площадь 126 м²</p>
                               <div class="card__inner">
                                  <div class="card__price">от 2 200 000 ₽</div>
-                                 <a href="./projects-pages/alma-page.html"
-                                    class="card__button button button_narrow">подробнее</a>
+                                 <a href="#alma-project-popup"
+                                    class="card__button button button_narrow popup-link">подробнее</a>
                               </div>
                            </div>
                         </div>
                         <div class="projects__slide card swiper-slide">
-                           <div class="card__image">
-                              <img src="./img/projects/Urslana.png" alt="Проект Урслана">
-                           </div>
+                           <a href="#projects-image-popup_urslana" class="popup-link swiper-slide__image">
+                              <picture class="card__image">
+                                 <source srcset="./img/projects/urslana/4-urslana@2px.webp" type="image/webp">
+                                 <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg"
+                                    media="min-width:1330px">
+                                 <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg"
+                                    media="max-width:640.98px">
+                                 <img src="./img/projects/urslana/4-urslana.jpg" alt="Проект Урслана">
+                              </picture>
+                           </a>
                            <div class="card__body">
                               <h3 class="card__title">Проект Урслана</h3>
                               <p class="card__desc">Общая площадь 54 м²</p>
                               <div class="card__inner">
                                  <div class="card__price">от 900 000 ₽</div>
-                                 <a href="./projects-pages/urslana-page.html"
-                                    class="card__button button button_narrow">подробнее</a>
+                                 <a href="#urslana-project-popup"
+                                    class="card__button button button_narrow popup-link">подробнее</a>
                               </div>
                            </div>
                         </div>
                         <div class="projects__slide card swiper-slide">
-                           <div class="card__image">
-                              <img src="./img/projects/Shugan.png" alt="Проект Мактама">
-                           </div>
+                           <a href="#projects-image-popup_shugan" class="popup-link swiper-slide__image">
+                              <picture class="card__image">
+                                 <source srcset="./img/projects/shugan/5-shugan@2px.webp" type="image/webp">
+                                 <source srcset="./img/projects/shugan/5-shugan@2px.jpg" type="image/jpeg"
+                                    media="min-width:1330px">
+                                 <source srcset="./img/projects/shugan/5-shugan.jpg" type="image/jpeg"
+                                    media="max-width:640.98px">
+                                 <img src="./img/projects/shugan/5-shugan.jpg" alt="Проект Шуган">
+                              </picture>
+                           </a>
                            <div class="card__body">
                               <h3 class="card__title">Проект Шуган</h3>
                               <p class="card__desc">Общая площадь 56 м²</p>
                               <div class="card__inner">
                                  <div class="card__price">от 1 000 000 ₽</div>
-                                 <a href="./projects-pages/shugan-page.html"
-                                    class="card__button button button_narrow">подробнее</a>
+                                 <a href="#shugan-project-popup"
+                                    class="card__button button button_narrow popup-link">подробнее</a>
                               </div>
                            </div>
                         </div>
                         <div class="projects__slide card swiper-slide">
-                           <div class="card__image">
-                              <img src="./img/projects/Fiesta.png" alt="Проект Фиеста">
-                           </div>
+                           <a href="#projects-image-popup_fiesta" class="popup-link swiper-slide__image">
+                              <picture class="card__image">
+                                 <source srcset="./img/projects/fiesta/6-fiesta@2px.webp" type="image/webp">
+                                 <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg"
+                                    media="min-width:1330px">
+                                 <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg"
+                                    media="max-width:640.98px">
+                                 <img src="./img/projects/fiesta/6-fiesta.jpg" alt="Проект Фиеста">
+                              </picture>
+                           </a>
                            <div class="card__body">
                               <h3 class="card__title">Проект Фиеста</h3>
                               <p class="card__desc">Общая площадь 197 м²</p>
                               <div class="card__inner">
                                  <div class="card__price">от 3 500 000 ₽</div>
-                                 <a href="./projects-pages/fiesta-page.html"
-                                    class="card__button button button_narrow">подробнее</a>
+                                 <a href="#fiesta-project-popup"
+                                    class="card__button button button_narrow popup-link">подробнее</a>
                               </div>
                            </div>
                         </div>
@@ -871,13 +965,13 @@
                                  <label for="form-phone-checkbox" class="form__checkbox-label">Жду звонка</label>
                               </div>
                            </div>
-                           <div class="form__inner-box">
-                              <div class="form__input">
-                                 <input type="tel" placeholder="Ваш телефон">
-                              </div>
-                              <button type="submit" class="form__button button button_narrow">Отправить</button>
-                           </div>
                         </fieldset>
+                        <div class="form__inner-box">
+                           <div class="form__input">
+                              <input type="tel" placeholder="Ваш телефон" name="tel">
+                           </div>
+                           <button type="submit" class="form__button button button_narrow">Отправить</button>
+                        </div>
                         <div class="form__radio radio">
                            <input id="form-accord" type="radio" value="1" name="accord"
                               class="form__radio-input radio__input">
@@ -900,34 +994,52 @@
                <div class="reports__slider swiper">
                   <div class="reports__wrapper swiper-wrapper">
                      <div class="reports__slide swiper-slide">
-                        <div class="reports__image swiper-slide__image">
-                           <img src="./img/reports/1.png" alt="Отчет по ватсап">
-                        </div>
+                        <a href="#reports-image-popup_1" class="popup-link swiper-slide__image">
+                           <picture class="reports__image">
+                              <source srcset="./img/reports/1.webp" type="image/webp">
+                              <img src="./img/reports/1.jpg" alt="Отчет по ватсап">
+                           </picture>
+                        </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <div class="reports__image swiper-slide__image">
-                           <img src="./img/reports/2.png" alt="Отчет по ватсап">
-                        </div>
+                        <a href="#reports-image-popup_2" class="popup-link swiper-slide__image">
+                           <picture class="reports__image">
+                              <source srcset="./img/reports/2.webp" type="image/webp">
+                              <img src="./img/reports/2.jpg" alt="Отчет по ватсап">
+                           </picture>
+                        </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <div class="reports__image swiper-slide__image">
-                           <img src="./img/reports/3.png" alt="Отчет по ватсап">
-                        </div>
+                        <a href="#reports-image-popup_3" class="popup-link swiper-slide__image">
+                           <picture class="reports__image">
+                              <source srcset="./img/reports/3.webp" type="image/webp">
+                              <img src="./img/reports/3.jpg" alt="Отчет по ватсап">
+                           </picture>
+                        </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <div class="reports__image swiper-slide__image">
-                           <img src="./img/reports/4.png" alt="Отчет по ватсап">
-                        </div>
+                        <a href="#reports-image-popup_4" class="popup-link swiper-slide__image">
+                           <picture class="reports__image">
+                              <source srcset="./img/reports/4.webp" type="image/webp">
+                              <img src="./img/reports/4.jpg" alt="Отчет по ватсап">
+                           </picture>
+                        </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <div class="reports__image swiper-slide__image">
-                           <img src="./img/reports/5.png" alt="Отчет по ватсап">
-                        </div>
+                        <a href="#reports-image-popup_5" class="popup-link swiper-slide__image">
+                           <picture class="reports__image">
+                              <source srcset="./img/reports/5.webp" type="image/webp">
+                              <img src="./img/reports/5.jpg" alt="Отчет по ватсап">
+                           </picture>
+                        </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <div class="reports__image swiper-slide__image">
-                           <img src="./img/reports/6.png" alt="Отчет по ватсап">
-                        </div>
+                        <a href="#reports-image-popup_6" class="popup-link swiper-slide__image">
+                           <picture class="reports__image">
+                              <source srcset="./img/reports/6.webp" type="image/webp">
+                              <img src="./img/reports/6.jpg" alt="Отчет по ватсап">
+                           </picture>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -984,9 +1096,1304 @@
 
          </div>
       </footer>
-   </div>
-   <script src="./js/swiper-bundle.min.js"></script>
-   <script src="./js/main.js"></script>
+
+      <div class="popup" id="application-popup">
+         <div class="popup__container">
+            <div class="popup__content popup__content_application">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <div class="application__form-wrap form">
+                  <form id="application__form" action="#" class="application__form">
+                     <h3 class="form__title">Заявка</h3>
+                     <div class="form__inner-box">
+                        <div class="form__input">
+                           <input type="text" placeholder="Ваше имя" name="name">
+                        </div>
+                        <div class="form__input">
+                           <input type="email" placeholder="Ваша почта" name="email">
+                        </div>
+                        <div class="form__input">
+                           <input type="tel" placeholder="Ваш телефон" name="tel">
+                        </div>
+                        <div class="form__input">
+                           <textarea type="text" placeholder="Комментарий" name="message"></textarea>
+                        </div>
+                     </div>
+                     <div class="form__radio radio">
+                        <input id="application-form-accord" type="radio" value="1" name="accord"
+                           class="form__radio-input radio__input">
+                        <label for="application-form-accord" class="form__radio-label radio__label">
+                           <span>Нажимая кнопку вы соглашаетесь с <a href="#">Политикой Конфиденциальности</a></span>
+                        </label>
+                     </div>
+                     <fieldset class="form__box">
+                        <div class="form__checkbox">
+                           <div class="form__checkbox-item">
+                              <div class="form__icon _icon-whatsapp"></div>
+                              <input id="application-form-whatsapp-checkbox" class="form__checkbox-input"
+                                 type="checkbox" name="messengers[]" value="whatsapp">
+                              <label for="application-form-whatsapp-checkbox"
+                                 class="form__checkbox-label">WhatsApp</label>
+                           </div>
+                           <div class="form__checkbox-item">
+                              <div class="form__icon _icon-telegram"></div>
+                              <input id="application-form-telegram-checkbox" class="form__checkbox-input"
+                                 type="checkbox" name="messengers[]" value="telegram">
+                              <label for="application-form-telegram-checkbox"
+                                 class="form__checkbox-label">Telegram</label>
+                           </div>
+                           <div class="form__checkbox-item">
+                              <div class="form__icon _icon-viber"></div>
+                              <input id="application-form-viber-checkbox" class="form__checkbox-input" type="checkbox"
+                                 name="messengers[]" value="viber">
+                              <label for="application-form-viber-checkbox" class="form__checkbox-label">Viber</label>
+                           </div>
+                           <div class="form__checkbox-item">
+                              <div class="form__icon _icon-phone"></div>
+                              <input id="application-form-phone-checkbox" class="form__checkbox-input" type="checkbox"
+                                 name="messengers[]" value="Жду звонка">
+                              <label for="application-form-phone-checkbox" class="form__checkbox-label">Жду
+                                 звонка</label>
+                           </div>
+                        </div>
+                        <button type="submit" class="form__button button button_narrow">оставить заявку</button>
+                     </fieldset>
+                  </form>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="popup" id="process-image-popup_1">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/1-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/1-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/1.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/1.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_2">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/2-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/2-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/2.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/2.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_3">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/3-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/3-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/3.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/3.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_4">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/4-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/4-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/4.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/4.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_5">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/5-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/5-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/5.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/5.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_6">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/6-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/6-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/6.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/6.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_7">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/7-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/7-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/7.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/7.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_8">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/8-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/8-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/8.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/8.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_9">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/9-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/9-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/9.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/9.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="process-image-popup_10">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#process" class="popup__close close-popup"></a>
+               <picture class="popup__process-image popup-link">
+                  <source srcset="./img/process/10-1530w.webp" type="image/webp">
+                  <source srcset="./img/process/10-1530w.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/process/10.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/process/10.jpg" alt="Фото процесса строительства объекта">
+               </picture>
+            </div>
+         </div>
+      </div>
+
+      <div class="popup" id="projects-image-popup_maktama">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <picture class="popup__projects-image">
+                  <source srcset="./img/projects/maktama/1-maktama@2px.webp" type="image/webp">
+                  <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/projects/maktama/1-maktama.jpg" alt="Проект Мактама">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="projects-image-popup_bulgar">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <picture class="popup__projects-image">
+                  <source srcset="./img/projects/bulgar/2-bulgar@2px.webp" type="image/webp">
+                  <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/projects/bulgar/2-bulgar.jpg" alt="Проект Булгар">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="projects-image-popup_alma">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <picture class="popup__projects-image">
+                  <source srcset="./img/projects/alma/3-alma@2px.webp" type="image/webp">
+                  <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/projects/alma/3-alma.jpg" alt="Проект Альма">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="projects-image-popup_urslana">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <picture class="popup__projects-image">
+                  <source srcset="./img/projects/urslana/4-urslana@2px.webp" type="image/webp">
+                  <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/projects/urslana/4-urslana.jpg" alt="Проект Урслана">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="projects-image-popup_shugan">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <picture class="popup__projects-image">
+                  <source srcset="./img/projects/shugan/5-shugan@2px.webp" type="image/webp">
+                  <source srcset="./img/projects/shugan/5-shugan@2px.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/projects/shugan/5-shugan.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/projects/shugan/5-shugan.jpg" alt="Проект Шуган">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="projects-image-popup_fiesta">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <picture class="popup__projects-image">
+                  <source srcset="./img/projects/fiesta/6-fiesta@2px.webp" type="image/webp">
+                  <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg" media="min-width:1330px">
+                  <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <img src="./img/projects/fiesta/6-fiesta.jpg" alt="Проект Фиеста">
+               </picture>
+            </div>
+         </div>
+      </div>
+
+      <div class="popup" id="reports-image-popup_1">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#reports" class="popup__close close-popup"></a>
+               <picture class="popup__reports-image popup-link">
+                  <source srcset="./img/reports/1.webp" type="image/webp">
+                  <img src="./img/reports/1.jpg" alt="Отчет по ватсап">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="reports-image-popup_2">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#reports" class="popup__close close-popup"></a>
+               <picture class="popup__reports-image popup-link">
+                  <source srcset="./img/reports/2.webp" type="image/webp">
+                  <img src="./img/reports/2.jpg" alt="Отчет по ватсап">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="reports-image-popup_3">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#reports" class="popup__close close-popup"></a>
+               <picture class="popup__reports-image popup-link">
+                  <source srcset="./img/reports/3.webp" type="image/webp">
+                  <img src="./img/reports/3.jpg" alt="Отчет по ватсап">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="reports-image-popup_4">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#reports" class="popup__close close-popup"></a>
+               <picture class="popup__reports-image popup-link">
+                  <source srcset="./img/reports/4.webp" type="image/webp">
+                  <img src="./img/reports/4.jpg" alt="Отчет по ватсап">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="reports-image-popup_5">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#reports" class="popup__close close-popup"></a>
+               <picture class="popup__reports-image popup-link">
+                  <source srcset="./img/reports/5.webp" type="image/webp">
+                  <img src="./img/reports/5.jpg" alt="Отчет по ватсап">
+               </picture>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="reports-image-popup_6">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#reports" class="popup__close close-popup"></a>
+               <picture class="popup__reports-image popup-link">
+                  <source srcset="./img/reports/6.webp" type="image/webp">
+                  <img src="./img/reports/6.jpg" alt="Отчет по ватсап">
+               </picture>
+            </div>
+         </div>
+      </div>
+
+      <div class="popup" id="maktama-project-popup">
+         <div class="popup__container">
+            <div class="popup__content">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <div id="maktama-project" class="maktama-project">
+                  <div class="maktama-project__container">
+                     <div class="maktama-project__box box">
+                        <div class="box__wrap">
+                           <div class="box__slider">
+                              <div class="box__image image-slider_maktama swiper">
+                                 <div class="image-slider__wrapper swiper-wrapper">
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <picture>
+                                             <source srcset="./img/projects/maktama/1-maktama@2px.webp"
+                                                type="image/webp">
+                                             <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg"
+                                                media="min-width:1330px">
+                                             <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg"
+                                                media="max-width:640.98px">
+                                             <img data-src="./img/projects/maktama/1-maktama.jpg"
+                                                src="./img/projects/maktama/1-maktama.jpg" class="swiper-lazy"
+                                                alt="Общий вид дома">
+                                          </picture>
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/maktama/image-2.jpg"
+                                             src="./img/projects/maktama/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/maktama/image-3.jpg"
+                                             src="./img/projects/maktama/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/maktama/image-4.jpg"
+                                             src="./img/projects/maktama/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/maktama/image-5.jpg"
+                                             src="./img/projects/maktama/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/maktama/image-6.jpg"
+                                             src="./img/projects/maktama/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="box_preview image-mini-slider_maktama swiper">
+                                 <div class="image-mini-slider__wrapper swiper-wrapper">
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img src="./img/projects/maktama/1-maktama.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/maktama/image-2.jpg"
+                                             src="./img/projects/maktama/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/maktama/image-3.jpg"
+                                             src="./img/projects/maktama/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/maktama/image-4.jpg"
+                                             src="./img/projects/maktama/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/maktama/image-5.jpg"
+                                             src="./img/projects/maktama/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/maktama/image-6.jpg"
+                                             src="./img/projects/maktama/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <h1 class="maktama-project__title box__title title">Проект мактама</h1>
+                           <div class="box__price price">
+                              <div class="price__label">Стоимость строительства</div>
+                              <div class="price__num">от <span>1 500 000 ₽</span></div>
+                           </div>
+                           <div class="box__square square">
+                              <div class="square__label">Общая площадь</div>
+                              <div class="square__num"><span>85,3</span> м²</div>
+                           </div>
+                           <div class="box__description description">
+                              <div class="description__label">Описание</div>
+                              <ul class="description__items">
+                                 <li class="description__item item">
+                                    <div class="item__label">Местоположение</div>
+                                    <div class="item__text">г. Альметьевск</div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Количество этажей</div>
+                                    <div class="item__text">1 <span class="item__hidden">этаж </span> + мансарда
+                                    </div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Сроки строительства</div>
+                                    <div class="item__text"><span class="item__hidden">стройка</span> 35 дней</div>
+                                 </li>
+                              </ul>
+                           </div>
+                           <a href="#" class="page-projects__prev button button_prev close-popup">
+                              <img src="./img/process/arrow.svg" alt="Стрелка назад">
+                              <span>Назад</span>
+                           </a>
+                           <div class="box__inner">
+                              <p class="box__text">Понравился дом?</p>
+                              <a href="#application-popup"
+                                 class="page-projects__button button button_white popup-link">оставить
+                                 заявку</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="bulgar-project-popup">
+         <div class="popup__container">
+            <div class="popup__content">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <div id="bulgar-project" class="bulgar-project">
+                  <div class="bulgar-project__container">
+                     <div class="bulgar-project__box box">
+                        <div class="box__wrap">
+                           <div class="box__slider">
+                              <div class="box__image image-slider_bulgar swiper">
+                                 <div class="image-slider__wrapper swiper-wrapper">
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <picture>
+                                             <source srcset="./img/projects/bulgar/2-bulgar@2px.webp" type="image/webp">
+                                             <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg"
+                                                media="min-width:1330px">
+                                             <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg"
+                                                media="max-width:640.98px">
+                                             <img data-src="./img/projects/bulgar/2-bulgar.jpg"
+                                                src="./img/projects/bulgar/2-bulgar.jpg" alt="Общий вид дома">
+                                          </picture>
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-2.jpg"
+                                             src="./img/projects/bulgar/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="box_preview image-mini-slider_bulgar swiper">
+                                 <div class="image-mini-slider__wrapper swiper-wrapper">
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img src="./img/projects/bulgar/2-bulgar.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-2.jpg"
+                                             src="./img/projects/bulgar/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-3.jpg"
+                                             src="./img/projects/bulgar/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-4.jpg"
+                                             src="./img/projects/bulgar/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-5.jpg"
+                                             src="./img/projects/bulgar/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-6.jpg"
+                                             src="./img/projects/bulgar/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/bulgar/image-7.jpg"
+                                             src="./img/projects/bulgar/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <h1 class="bulgar-project__title box__title title">Проект булгар</h1>
+                           <div class="box__price price">
+                              <div class="price__label">Стоимость строительства</div>
+                              <div class="price__num">от <span>1 500 000 ₽</span></div>
+                           </div>
+                           <div class="box__square square">
+                              <div class="square__label">Общая площадь</div>
+                              <div class="square__num"><span>89,2</span> м²</div>
+                           </div>
+                           <div class="box__description description">
+                              <div class="description__label">Описание</div>
+                              <ul class="description__items">
+                                 <li class="description__item item">
+                                    <div class="item__label">Местоположение</div>
+                                    <div class="item__text">г. Альметьевск</div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Количество этажей</div>
+                                    <div class="item__text">2 <span class="item__hidden"> этажа </span></div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Сроки строительства</div>
+                                    <div class="item__text"><span class="item__hidden">стройка</span> 40 дней</div>
+                                 </li>
+                              </ul>
+                           </div>
+                           <a href="#" class="page-projects__prev button button_prev close-popup">
+                              <img src="./img/process/arrow.svg" alt="Стрелка назад">
+                              <span>Назад</span>
+                           </a>
+                           <div class="box__inner">
+                              <p class="box__text">Понравился дом?</p>
+                              <a href="#application-popup"
+                                 class="page-projects__button button button_white popup-link">оставить
+                                 заявку</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="alma-project-popup">
+         <div class="popup__container">
+            <div class="popup__content">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <div id="alma-project" class="alma-project">
+                  <div class="alma-project__container">
+                     <div class="alma-project__box box">
+                        <div class="box__wrap">
+                           <div class="box__slider">
+                              <div class="box__image image-slider_alma swiper">
+                                 <div class="image-slider__wrapper swiper-wrapper">
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <picture>
+                                             <source srcset="./img/projects/alma/3-alma@2px.webp" type="image/webp">
+                                             <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg"
+                                                media="min-width:1330px">
+                                             <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg"
+                                                media="max-width:640.98px">
+                                             <img data-src="./img/projects/alma/3-alma.jpg"
+                                                src="./img/projects/alma/3-alma.jpg" class="swiper-lazy"
+                                                alt="Общий вид дома">
+                                          </picture>
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/alma/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/alma/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/alma/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/alma/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/alma/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/alma/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="box_preview image-mini-slider_alma swiper">
+                                 <div class="image-mini-slider__wrapper swiper-wrapper">
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img src="./img/projects/alma/3-alma.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/alma/image-2.jpg"
+                                             src="./img/projects/alma/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/alma/image-3.jpg"
+                                             src="./img/projects/alma/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/alma/image-4.jpg"
+                                             src="./img/projects/alma/image-4.jpg" class="swiper-lazy" alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/alma/image-5.jpg"
+                                             src="./img/projects/alma/image-5.jpg" class="swiper-lazy" alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/alma/image-6.jpg"
+                                             src="./img/projects/alma/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/alma/image-7.jpg"
+                                             src="./img/projects/alma/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <h1 class="alma-project__title box__title title">Проект альма</h1>
+                           <div class="box__price price">
+                              <div class="price__label">Стоимость строительства</div>
+                              <div class="price__num">от <span>2 200 000 ₽</span></div>
+                           </div>
+                           <div class="box__square square">
+                              <div class="square__label">Общая площадь</div>
+                              <div class="square__num"><span>126</span> м²</div>
+                           </div>
+                           <div class="box__description description">
+                              <div class="description__label">Описание</div>
+                              <ul class="description__items">
+                                 <li class="description__item item">
+                                    <div class="item__label">Местоположение</div>
+                                    <div class="item__text">с. Кульшарипово</div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Количество этажей</div>
+                                    <div class="item__text">2 <span class="item__hidden"> этажа </span></div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Сроки строительства</div>
+                                    <div class="item__text"><span class="item__hidden">стройка</span> 36 дней</div>
+                                 </li>
+                              </ul>
+                           </div>
+                           <a href="#" class="page-projects__prev button button_prev close-popup">
+                              <img src="./img/process/arrow.svg" alt="Стрелка назад">
+                              <span>Назад</span>
+                           </a>
+                           <div class="box__inner">
+                              <p class="box__text">Понравился дом?</p>
+                              <a href="#application-popup"
+                                 class="page-projects__button button button_white popup-link">оставить
+                                 заявку</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="urslana-project-popup">
+         <div class="popup__container">
+            <div class="popup__content">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <div id="urslana-project" class="urslana-project">
+                  <div class="urslana-project__container">
+                     <div class="urslana-project__box box">
+                        <div class="box__wrap">
+                           <div class="box__slider">
+                              <div class="box__image image-slider_urslana swiper">
+                                 <div class="image-slider__wrapper swiper-wrapper">
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <picture>
+                                             <source srcset="./img/projects/urslana/4-urslana@2px.webp"
+                                                type="image/webp">
+                                             <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg"
+                                                media="min-width:1330px">
+                                             <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg"
+                                                media="max-width:640.98px">
+                                             <img data-src="./img/projects/urslana/4-urslana.jpg"
+                                                src="./img/projects/urslana/4-urslana.jpg" class="swiper-lazy"
+                                                alt="Общий вид дома">
+                                          </picture>
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/urslana/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/urslana/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/urslana/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/urslana/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/urslana/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/urslana/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="box_preview image-mini-slider_urslana swiper">
+                                 <div class="image-mini-slider__wrapper swiper-wrapper">
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img src="./img/projects/urslana/4-urslana.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/urslana/image-2.jpg"
+                                             src="./img/projects/urslana/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/urslana/image-3.jpg"
+                                             src="./img/projects/urslana/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/urslana/image-4.jpg"
+                                             src="./img/projects/urslana/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/urslana/image-5.jpg"
+                                             src="./img/projects/urslana/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/urslana/image-6.jpg"
+                                             src="./img/projects/urslana/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/urslana/image-7.jpg"
+                                             src="./img/projects/urslana/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <h1 class="urslana-project__title box__title title">Проект урслана</h1>
+                           <div class="box__price price">
+                              <div class="price__label">Стоимость строительства</div>
+                              <div class="price__num">от <span>900 000 ₽</span></div>
+                           </div>
+                           <div class="box__square square">
+                              <div class="square__label">Общая площадь</div>
+                              <div class="square__num"><span>54</span> м²</div>
+                           </div>
+                           <div class="box__description description">
+                              <div class="description__label">Описание</div>
+                              <ul class="description__items">
+                                 <li class="description__item item">
+                                    <div class="item__label">Местоположение</div>
+                                    <div class="item__text">г. Альметьевск</div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Количество этажей</div>
+                                    <div class="item__text">1 <span class="item__hidden"> этаж</span></div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Сроки строительства</div>
+                                    <div class="item__text"><span class="item__hidden">стройка</span> 29 дней</div>
+                                 </li>
+                              </ul>
+                           </div>
+                           <a href="#" class="page-projects__prev button button_prev close-popup">
+                              <img src="./img/process/arrow.svg" alt="Стрелка назад">
+                              <span>Назад</span>
+                           </a>
+                           <div class="box__inner">
+                              <p class="box__text">Понравился дом?</p>
+                              <a href="#application-popup"
+                                 class="page-projects__button button button_white popup-link">оставить
+                                 заявку</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="shugan-project-popup">
+         <div class="popup__container">
+            <div class="popup__content">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <div id="shugan-project" class="shugan-project">
+                  <div class="shugan-project__container">
+                     <div class="shugan-project__box box">
+                        <div class="box__wrap">
+                           <div class="box__slider">
+                              <div class="box__image image-slider_shugan swiper">
+                                 <div class="image-slider__wrapper swiper-wrapper">
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <picture>
+                                             <source srcset="./img/projects/shugan/5-shugan@2px.webp" type="image/webp">
+                                             <source srcset="./img/projects/shugan/5-shugan@2px.jpg" type="image/jpeg"
+                                                media="min-width:1330px">
+                                             <source srcset="./img/projects/shugan/5-shugan.jpg" type="image/jpeg"
+                                                media="max-width:640.98px">
+                                             <img src="./img/projects/shugan/5-shugan.jpg" class="swiper-lazy"
+                                                alt="Общий вид дома">>
+                                          </picture>
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img src="./img/projects/shugan/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/shugan/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/shugan/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/shugan/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/shugan/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/shugan/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="box_preview image-mini-slider_shugan swiper">
+                                 <div class="image-mini-slider__wrapper swiper-wrapper">
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img src="./img/projects/shugan/5-shugan.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/shugan/image-2.jpg"
+                                             src="./img/projects/shugan/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/shugan/image-3.jpg"
+                                             src="./img/projects/shugan/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/shugan/image-4.jpg"
+                                             src="./img/projects/shugan/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/shugan/image-5.jpg"
+                                             src="./img/projects/shugan/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/shugan/image-6.jpg"
+                                             src="./img/projects/shugan/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/shugan/image-7.jpg"
+                                             src="./img/projects/shugan/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <h1 class="shugan-project__title box__title title">Проект шуган</h1>
+                           <div class="box__price price">
+                              <div class="price__label">Стоимость строительства</div>
+                              <div class="price__num">от <span>1 000 000 ₽</span></div>
+                           </div>
+                           <div class="box__square square">
+                              <div class="square__label">Общая площадь</div>
+                              <div class="square__num"><span>56</span> м²</div>
+                           </div>
+                           <div class="box__description description">
+                              <div class="description__label">Описание</div>
+                              <ul class="description__items">
+                                 <li class="description__item item">
+                                    <div class="item__label">Местоположение</div>
+                                    <div class="item__text">п. Малый Шуган</div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Количество этажей</div>
+                                    <div class="item__text">1 <span class="item__hidden"> этаж </span> + мансарда</div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Сроки строительства</div>
+                                    <div class="item__text"><span class="item__hidden">стройка</span> 32 дня</div>
+                                 </li>
+                              </ul>
+                           </div>
+                           <a href="#" class="page-projects__prev button button_prev close-popup">
+                              <img src="./img/process/arrow.svg" alt="Стрелка назад">
+                              <span>Назад</span>
+                           </a>
+                           <div class="box__inner">
+                              <p class="box__text">Понравился дом?</p>
+                              <a href="#application-popup"
+                                 class="page-projects__button button button_white popup-link">оставить
+                                 заявку</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="popup" id="fiesta-project-popup">
+         <div class="popup__container">
+            <div class="popup__content">
+               <a href="#projects" class="popup__close close-popup"></a>
+               <div id="fiesta-project" class="fiesta-project">
+                  <div class="fiesta-project__container">
+                     <div class="fiesta-project__box box">
+                        <div class="box__wrap">
+                           <div class="box__slider">
+                              <div class="box__image image-slider_fiesta swiper">
+                                 <div class="image-slider__wrapper swiper-wrapper">
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <picture>
+                                             <source srcset="./img/projects/fiesta/6-fiesta@2px.webp" type="image/webp">
+                                             <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg"
+                                                media="min-width:1330px">
+                                             <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg"
+                                                media="max-width:640.98px">
+                                             <img data-src="./img/projects/fiesta/6-fiesta.jpg"
+                                                src="./img/projects/fiesta/6-fiesta.jpg" class="swiper-lazy"
+                                                alt="Общий вид дома">
+                                          </picture>
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img src="./img/projects/fiesta/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-slider__slide swiper-slide">
+                                       <div class="image-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="box_preview image-mini-slider_fiesta swiper">
+                                 <div class="image-mini-slider__wrapper swiper-wrapper">
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img src="./img/projects/fiesta/6-fiesta.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-2.jpg"
+                                             src="./img/projects/fiesta/image-2.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-3.jpg"
+                                             src="./img/projects/fiesta/image-3.jpg" class="swiper-lazy"
+                                             alt="Проект дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-4.jpg"
+                                             src="./img/projects/fiesta/image-4.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-5.jpg"
+                                             src="./img/projects/fiesta/image-5.jpg" class="swiper-lazy"
+                                             alt="Теплый пол">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-6.jpg"
+                                             src="./img/projects/fiesta/image-6.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                    <div class="image-mini-slider__slide swiper-slide">
+                                       <div class="image-mini-slider__image">
+                                          <img data-src="./img/projects/fiesta/image-7.jpg"
+                                             src="./img/projects/fiesta/image-7.jpg" class="swiper-lazy"
+                                             alt="Общий вид дома">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <h1 class="fiesta-project__title box__title title">Проект фиеста</h1>
+                           <div class="box__price price">
+                              <div class="price__label">Стоимость строительства</div>
+                              <div class="price__num">от <span>3 500 000 ₽</span></div>
+                           </div>
+                           <div class="box__square square">
+                              <div class="square__label">Общая площадь</div>
+                              <div class="square__num"><span>197</span> м²</div>
+                           </div>
+                           <div class="box__description description">
+                              <div class="description__label">Описание</div>
+                              <ul class="description__items">
+                                 <li class="description__item item">
+                                    <div class="item__label">Местоположение</div>
+                                    <div class="item__text">г. Октябрьский</div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Количество этажей</div>
+                                    <div class="item__text">2 <span class="item__hidden"> этажа </span></div>
+                                 </li>
+                                 <li class="description__item item">
+                                    <div class="item__label">Сроки строительства</div>
+                                    <div class="item__text"><span class="item__hidden">стройка</span> 35 дней</div>
+                                 </li>
+                              </ul>
+                           </div>
+                           <a href="#" class="page-projects__prev button button_prev close-popup">
+                              <img src="./img/process/arrow.svg" alt="Стрелка назад">
+                              <span>Назад</span>
+                           </a>
+                           <div class="box__inner">
+                              <p class="box__text">Понравился дом?</p>
+                              <a href="#application-popup"
+                                 class="page-projects__button button button_white popup-link">оставить
+                                 заявку</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="./js/swiper-bundle.min.js"></script>
+      <script src="./js/main-swiper.js"></script>
+      <script src="./js/main.js"></script>
 </body>
 
 </html>

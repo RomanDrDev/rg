@@ -1,245 +1,142 @@
-// Инициализируем Swiper
+"use strict"
 
-let processSwiper = new Swiper('.process__slider', {
-   breakpoints: {
-      320: {
-         slidesPerView: 2,
-         spaceBetween: 10,
-         grid: {
-            rows: 2,
-            fill: 'row',
-         },
-      },
-      480: {
-         slidesPerView: 2,
-         spaceBetween: 10,
-         grid: {
-            rows: 2,
-            fill: 'row',
-         },
-      },
-      575: {
-         slidesPerView: 2,
-         spaceBetween: 20,
-         grid: {
-            rows: 2,
-            fill: 'row',
-         },
-      },
-      640: {
-         slidesPerView: 5,
-         spaceBetween: 5,
-         cssMode: true,
-         grid: {
-            rows: 2,
-            fill: 'row',
-         },
-      },
-      768: {
-         slidesPerView: 5,
-         spaceBetween: 10,
-         cssMode: true,
-         grid: {
-            rows: 2,
-            fill: 'row',
-         },
-      },
-      1024: {
-         slidesPerView: 5,
-         spaceBetween: 15,
-         cssMode: true,
-         grid: {
-            rows: 2,
-            fill: 'row',
-         },
+// скролл тз верхнего меню до нужного места на странице 
+// const scrolls = document.querySelectorAll('.menu__item, .started__button-quiz, .gift__button');
+// const speed = 800;
+
+// scrolls.forEach(scroll => {
+//    scroll.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       var href = this.data('href');
+//       document.querySelector('html, body').animate({
+//          scrollTop: ($(`.${href}`).first().offset().top - 100)
+//       }, 500);
+//    });
+// })
+
+
+// попапы
+const popupLinks = document.querySelectorAll('.popup-link');
+const body = document.querySelector('body');
+const lockPadding = document.querySelectorAll('.lock-padding');
+
+let unlock = true;
+
+const timeout = 800;
+
+if (popupLinks.length > 0) {
+   for (let i = 0; i < popupLinks.length; i++) {
+      const popupLink = popupLinks[i];
+      popupLink.addEventListener("click", function (e) {
+         const popupName = popupLink.getAttribute('href').replace('#', '');
+         const curentPopup = document.getElementById(popupName);
+         popupOpen(curentPopup);
+         e.preventDefault();
+      });
+   }
+}
+
+const popupCloseIcon = document.querySelectorAll('.close-popup');
+if (popupCloseIcon.length > 0) {
+   for (let i = 0; i < popupCloseIcon.length; i++) {
+      const el = popupCloseIcon[i];
+      el.addEventListener("click", function (e) {
+         popupClose(el.closest('.popup'));
+         e.preventDefault();
+      });
+   }
+}
+
+function popupOpen(curentPopup) {
+   if (curentPopup && unlock) {
+      const popupActive = document.querySelector('.popup.open');
+      if (popupActive) {
+         popupClose(popupActive, false);
+      } else {
+         bodyLock();
       }
-   },
-   // grid: {
-   //    rows: 2,
-   //    fill: 'row',
-   // },
-   autoHeight: false,
-   navigation: {
-      nextEl: '.swiper-button-next.process__btn-next',
-      prevEl: '.swiper-button-prev.process__btn-prev'
-   },
-   keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
-   },
-   mousewheel: {
-      sensitivity: 1,
-   },
-   observer: true,
-   observeParents: true,
-   observeSlideChildren: true,
-});
-
-let projectsSwiper = new Swiper('.projects__slider', {
-   breakpoints: {
-      320: {
-         slidesPerView: 2,
-         spaceBetween: 15,
-         grid: {
-            rows: 2,
-            fill: 'row'
-         },
-      },
-      480: {
-         slidesPerView: 2,
-         spaceBetween: 20,
-         grid: {
-            rows: 2,
-            fill: 'row'
-         },
-      },
-      575: {
-         slidesPerView: 2,
-         spaceBetween: 30,
-         grid: {
-            rows: 2,
-            fill: 'row'
-         },
-      },
-      640: {
-         slidesPerView: 3,
-         spaceBetween: 10,
-         cssMode: true,
-         grid: {
-            rows: 2,
-            fill: 'row'
-         },
-      },
-      768: {
-         slidesPerView: 3,
-         spaceBetween: 30,
-         cssMode: true,
-         grid: {
-            rows: 2,
-            fill: 'row'
-         },
-      },
-      1024: {
-         slidesPerView: 3,
-         spaceBetween: 45,
-         cssMode: true,
-         grid: {
-            rows: 2,
-            fill: 'row'
-         },
-      }
-   },
-   // grid: {
-   //    rows: 2,
-   //    fill: 'row'
-   // },
-   autoHeight: false,
-   watchOverflow: true,
-   navigation: {
-      nextEl: '.swiper-button-next.projects__btn-next',
-      prevEl: '.swiper-button-prev.projects__btn-prev'
-   },
-   keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
-   },
-   mousewheel: {
-      sensitivity: 1,
-   },
-   observer: true,
-   observeParents: true,
-   observeSlideChildren: true,
-});
-
-
-let reportsSwiper = new Swiper('.reports__slider', {
-   breakpoints: {
-      320: {
-         slidesPerView: 3,
-         spaceBetween: 10
-      },
-      480: {
-         slidesPerView: 3,
-         spaceBetween: 10
-      },
-      575: {
-         slidesPerView: 3,
-         spaceBetween: 20
-      },
-      640: {
-         slidesPerView: 6,
-         spaceBetween: 5
-      },
-      768: {
-         slidesPerView: 6,
-         spaceBetween: 10
-      },
-      1024: {
-         slidesPerView: 6,
-         spaceBetween: 20
-      }
-   },
-   watchOverflow: true,
-   navigation: {
-      nextEl: '.swiper-button-next.reports__btn-next',
-      prevEl: '.swiper-button-prev.reports__btn-prev'
-   },
-   keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
-   },
-   mousewheel: {
-      sensitivity: 1,
-   },
-   cssMode: true,
-});
-
-
-let imageSlider = new Swiper('.image-slider', {
-   autoHeight: false,
-   slidesPerView: 1,
-   watchOverflow: true,
-   preloadImages: true,
-   lazy: {
-      loadPrevNext: true,
-   },
-   watchSlidesProgress: true,
-   watchSlidesVisibility: true,
-   initialSlide: 0,
-   // Превью
-   thumbs: {
-      swiper: {
-         el: '.image-mini-slider',
-         slidesPerView: 6,
-         spaceBetween: 8,
-         breakpoints: {
-            320: {
-               spaceBetween: 3
-            },
-            480: {
-               spaceBetween: 3
-            },
-            575: {
-               spaceBetween: 3
-            },
-            640: {
-               spaceBetween: 4
-            },
-            768: {
-               spaceBetween: 5
-            },
+      curentPopup.classList.add('open');
+      curentPopup.addEventListener("click", function (e) {
+         if (!e.target.closest('.popup__content')) {
+            popupClose(e.target.closest('.popup'));
          }
+      });
+   }
+}
+
+// при попапах внутри других попапов
+function popupClose(popupActive, doUnlock = true) {
+   if (unlock) {
+      popupActive.classList.remove('open');
+      if (doUnlock) {
+         bodyUnlock();
       }
-   },
-   keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
-   },
-   mousewheel: {
-      sensitivity: 1,
-   },
+   }
+}
+
+// скрываем скролл, добавляя паддинг body и объектам с position: fixed
+function bodyLock() {
+   const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+
+   if (lockPadding.length > 0) {
+      for (let i = 0; i < lockPadding.length; i++) {
+         const el = lockPadding[i];
+         el.getElementsByClassName.paddingRight = lockPaddingValue;
+      }
+   }
+   body.style.paddingRight = lockPaddingValue;
+   body.classList.add('lock');
+
+   unlock = false;
+   setTimeout(function () {
+      unlock = true;
+   }, timeout);
+}
+
+// открываем скролл и убираем паддинг у body и объектов с position: fixed
+function bodyUnlock() {
+   setTimeout(function () {
+      for (let i = 0; i < lockPadding.length; i++) {
+         const el = lockPadding[i];
+         el.style.paddingRight = '0px';
+      }
+      body.style.paddingRight = '0px';
+      body.classList.remove('lock');
+   }, timeout);
+
+   unlock = false;
+   setTimeout(function () {
+      unlock = true;
+   }, timeout);
+}
+
+// закрываем попап клавишей Esc
+document.addEventListener("keydown", function (e) {
+   if (e.key === "Escape") {
+      const popupActive = this.document.querySelector('.popup.open');
+      popupClose(popupActive);
+   }
 });
+
+(function () {
+   // проверяем поддержку 
+   if (!Element.prototype.closest) {
+      Element.prototype.closest = function (css) {
+         var node = this;
+         while (node) {
+            if (node.matches(css)) return node;
+            else node = node.parentElement;
+         }
+         return null;
+      };
+   }
+})();
+(function () {
+   // проверяем поддержку 
+   if (!Element.prototype.matches) {
+      Element.prototype.matches = Element.prototype.matchesSelector ||
+         Element.prototype.mozmatchesSelector ||
+         Element.prototype.matchesSelector;
+   }
+})();
+
