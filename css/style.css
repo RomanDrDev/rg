@@ -414,7 +414,11 @@ a .card__image {
 }
 
 .radio__input {
-   display: none;
+   width: 0;
+   height: 0;
+   position: absolute;
+   opacity: 0;
+   z-index: -1;
 }
 
 [class*="__label"] {
@@ -430,6 +434,7 @@ a .card__image {
    justify-items: center;
    cursor: pointer;
    margin: 0;
+   transition: all 0.5s ease 0;
 }
 
 .radio__label span {
@@ -442,7 +447,6 @@ a .card__image {
 .radio__label a {
    padding: 0px 0px 0px 5px;
    color: #172929;
-   transition: all 0.5s ease 0;
 }
 
 .radio__label a:hover {
@@ -462,6 +466,20 @@ a .card__image {
    top: 0;
    left: 0;
    transform: translate(-50%, 0);
+}
+
+.radio__label::after {
+   content: '';
+   align-self: center;
+   width: 8px;
+   height: 8px;
+   background-color: #172929;
+   border-radius: 50%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: translate(-50%, 50%) scale(0);
+   transition: 0.2s ease-in;
 }
 
 .radio__label_image {
@@ -492,6 +510,15 @@ a .card__image {
    transform: translate(-50%, -50%);
 }
 
+.radio__label_image::after {
+   height: 10px;
+   width: 10px;
+   top: -25%;
+   left: 50%;
+   transform: translate(-50%, 50%) scale(0);
+   transition: 0.2s ease-in;
+}
+
 .radio__label_image.checkbox__label::before {
    margin: 0;
 }
@@ -505,12 +532,19 @@ a .card__image {
    transform: translate(-50%, -50%);
 }
 
+.radio__label_row::after {
+   height: 12px;
+   width: 12px;
+   top: 25%;
+   left: 13%;
+}
+
 .radio__label:hover:before {
    background: #B8DBEF;
 }
 
-.radio__input:checked+.radio__label::before {
-   background: #85A78B;
+.radio__input:checked+.radio__label::after {
+   transform: translate(-50%, 50%) scale(1);
 }
 
 /* ------- */
@@ -778,9 +812,24 @@ textarea:focus {
    top: 0;
    right: 0;
    transform: translate(-50%, 0);
-   background: url('../img/close-popup.svg') center / contain no-repeat;
-   width: 30px;
-   height: 30px;
+   background-color: #172929;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+}
+
+.popup__close::after {
+   content: "";
+   width: 34px;
+   height: 34px;
+   background: url('/img/close.png') 50% 50% / 14px 14px no-repeat;
+   background-color: #172929;
+   border: 2px solid #EDF1F4;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .popup__content_application .popup__close {
@@ -842,6 +891,14 @@ textarea:focus {
    .radio__label_image {
       top: 111%;
       padding: 18px 0px 0px 0px;
+   }
+
+   .radio__label_image::after {
+      top: -30%;
+   }
+
+   .radio__label_row::after {
+      top: 27%;
    }
 
    .popup__content_image .popup__close {
@@ -907,9 +964,17 @@ textarea:focus {
       padding: 15px 0px 0px 0px;
    }
 
+   .radio__label_image::after {
+      top: -35%;
+   }
+
    .checkbox__label::before {
       width: 20px;
       height: 16px;
+   }
+
+   .radio__label_row::after {
+      top: 24.5%;
    }
 
    .stage-quiz__num {
@@ -978,6 +1043,12 @@ textarea:focus {
       width: 18px;
    }
 
+   .radio__label_image::after {
+      height: 8.5px;
+      width: 8.5px;
+      top: -30%;
+   }
+
    .radio_row {
       padding: 6px 10px 9px 30px;
    }
@@ -987,6 +1058,14 @@ textarea:focus {
       height: 17px;
       left: 12%;
    }
+
+   .radio__label_row::after {
+      height: 10px;
+      width: 10px;
+      top: 25%;
+      left: 12%;
+   }
+
 
    .checkbox__label::before {
       width: 18px;
@@ -1070,6 +1149,11 @@ textarea:focus {
       left: 1%;
    }
 
+   .form__radio-label::after {
+      top: -6%;
+      left: 1%;
+   }
+
    .radio__label span {
       color: #85A78B;
    }
@@ -1088,6 +1172,12 @@ textarea:focus {
       width: 16px;
    }
 
+   .radio__label_image::after {
+      height: 8px;
+      width: 8px;
+      top: -32%;
+   }
+
    .radio_row {
       padding: 4px 5px 7px 30px;
    }
@@ -1097,6 +1187,12 @@ textarea:focus {
       height: 16px;
       border: 2px solid #85A78B;
       left: 12%;
+   }
+
+   .radio__label_row::after {
+      height: 8px;
+      width: 8px;
+      top: 28%;
    }
 
    .checkbox__label::before {
@@ -1335,8 +1431,15 @@ textarea:focus {
    }
 
    .radio__label_image::before {
+      top: -20%;
       height: 14px;
       width: 14px;
+   }
+
+   .radio__label_image::after {
+      height: 6.5px;
+      width: 6.5px;
+      top: -50%;
    }
 
    .radio_row {
@@ -1347,6 +1450,12 @@ textarea:focus {
       width: 14px;
       height: 14px;
       left: 12%;
+   }
+
+   .radio__label_row::after {
+      height: 6px;
+      width: 6px;
+      top: 30%;
    }
 
    .checkbox__label::before {
@@ -1383,9 +1492,27 @@ textarea:focus {
       right: 15%;
    }
 
-   /* .button_prev {
-      border-radius: 6px;
-   } */
+   .radio__label_image::before {
+      top: -10%;
+   }
+
+   .radio__label_image::after {
+      height: 6.5px;
+      width: 6.5px;
+      top: -40%;
+   }
+
+   .popup__close {
+      width: 36px;
+      height: 36px;
+   }
+
+   .popup__close::after {
+      width: 30px;
+      height: 30px;
+      background: url('/img/close.png') 50% 50% / 12px 12px no-repeat;
+      border: 1px solid #EDF1F4;
+   }
 }
 
 @media (max-width: 450.98px) {
@@ -1397,6 +1524,18 @@ textarea:focus {
       width: 12px;
       height: 12px;
       left: 13%;
+   }
+
+   .radio__label_row::after {
+      left: 13%;
+   }
+
+   .radio__label_image::before {
+      top: -5%;
+   }
+
+   .radio__label_image::after {
+      top: -33%;
    }
 
    .checkbox__label::before {
@@ -1412,6 +1551,13 @@ textarea:focus {
    .form__radio-label::before {
       width: 12px;
       height: 12px;
+      left: 5.5%;
+   }
+
+   .form__radio-label::after {
+      width: 6px;
+      height: 6px;
+      top: 0;
       left: 5.5%;
    }
 }
@@ -1443,6 +1589,10 @@ textarea:focus {
    .form__icon {
       font-size: 24px;
    }
+
+   .radio__label_image::after {
+      top: -35%;
+   }
 }
 
 @media (max-width: 396.98px) {
@@ -1466,6 +1616,18 @@ textarea:focus {
 
    .radio_row {
       padding: 0px 5px 5px 21px;
+   }
+
+   .radio__label_image::before {
+      top: 0;
+   }
+
+   .radio__label_image::after {
+      top: -30%;
+   }
+
+   .radio__label_row::after {
+      top: 29%;
    }
 }
 
@@ -1513,17 +1675,25 @@ textarea:focus {
       font-size: 16px;
    }
 
+   .radio__label_image::before {
+      top: 5%;
+   }
+
+   .radio__label_image::after {
+      top: -25%;
+   }
+
    .form__checkbox-label {
       font-size: 10px;
+   }
+
+   .form__checkbox-label::before {
+      right: 20%;
    }
 
    .form__icon {
       font-size: 18px;
       padding-left: 5px;
-   }
-
-   .form__checkbox-label::before {
-      right: 20%;
    }
 
    .form__inner-box {
@@ -2235,6 +2405,10 @@ textarea:focus {
    width: 100%;
 }
 
+.step-5 .quiz__radio-label::after {
+   display: none;
+}
+
 .step-5 .radio__label_image.checkbox__label {
    left: 85%;
    width: 110%;
@@ -2280,7 +2454,6 @@ span.quiz__hide {
 .quiz__button {
    align-self: flex-end;
 }
-
 
 .quiz__buttons {
    display: flex;
@@ -2372,15 +2545,16 @@ span.quiz__hide {
 .quiz__feedback .form__inner-box {
    display: flex;
    flex-direction: column;
-   margin: 0px 0px 3.5% 0px;
+   margin: 0px auto 3.5%;
 }
 
 .quiz__feedback input[type=tel] {
    flex: 1 1 auto;
    max-width: 495px;
    width: 100%;
-   margin: 0px 0px 4% 0px;
+   margin: 0px auto 4%;
    padding: 9px 10px 11px 50px;
+   border: 3px solid #FDFEFF;
 }
 
 .quiz__feedback .form__button {
@@ -2397,7 +2571,8 @@ span.quiz__hide {
    display: none;
 }
 
-.quiz__feedback .form__radio-label::before {
+.quiz__feedback .form__radio-label::before,
+.quiz__feedback .form__radio-label::after {
    left: 4%;
 }
 
@@ -2486,7 +2661,7 @@ span.quiz__hide {
    }
 
    .quiz__feedback .form__inner-box {
-      margin: 0px 0px 3% 0px;
+      margin: 0px auto 3%;
    }
 }
 
@@ -2567,6 +2742,14 @@ span.quiz__hide {
       width: 18px;
    }
 
+   .step-6 .radio__label_image::before {
+      top: -5%;
+   }
+
+   .step-6 .radio__label_image::after {
+      top: -40%;
+   }
+
    .step-5 .radio__label_image.checkbox__label {
       left: 78%;
       font-size: 14px;
@@ -2642,7 +2825,7 @@ span.quiz__hide {
    }
 
    .quiz__feedback .form__inner-box {
-      margin: 0px 0px 0.7% 0px;
+      margin: 0px auto 0.7%;
    }
 
    .quiz__feedback input[type=tel] {
@@ -2794,6 +2977,15 @@ span.quiz__hide {
       width: 16px;
    }
 
+   .step-3 .radio__label_image::after {
+      top: -40%;
+   }
+
+   .step-4 .radio__label_image::after,
+   .step-6 .radio__label_image::after {
+      top: -37%;
+   }
+
    .quiz__result {
       padding: 2.453% 0%;
    }
@@ -2844,7 +3036,7 @@ span.quiz__hide {
    }
 
    .quiz__feedback input[type=tel] {
-      margin: 0px 0px 3% 0px;
+      margin: 0px auto 3%;
       padding: 5px 10px 6px 50px;
    }
 
@@ -2930,6 +3122,20 @@ span.quiz__hide {
       width: 14px;
       height: 14px;
       left: 6%;
+   }
+
+   .quiz__feedback .form__radio-label::after {
+      top: -5%;
+      left: 6%;
+   }
+
+   .step-3 .radio__label_image::after,
+   .step-4 .radio__label_image::after {
+      top: -35%;
+   }
+
+   .step-6 .radio__label_image::after {
+      top: -40%;
    }
 }
 
@@ -3033,13 +3239,30 @@ span.quiz__hide {
 
    .step-3 .radio__label_image::before,
    .step-4 .radio__label_image::before {
-      top: 50%;
+      top: 0;
       left: -20%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 0);
    }
 
-   .step-4 .radio__label_image::before {
+   .step-3 .radio__label_image::after,
+   .step-4 .radio__label_image::after {
+      width: 8px;
+      height: 8px;
+      top: 0%;
+      left: -20%;
+   }
+
+   .step-4 .radio__label_image::before,
+   .step-4 .radio__label_image::after {
       left: -10%;
+   }
+
+   .step-4 .radio__label_image::after {
+      left: -10%;
+   }
+
+   .step-6 .radio__label_image::after {
+      top: -33%;
    }
 
    .step-3 .radio_img,
@@ -3067,6 +3290,10 @@ span.quiz__hide {
       padding: 0px 0px 0px 30px;
    }
 
+   .step-5 .checkbox__label::before {
+      top: 50%;
+   }
+
    label[for="electrics"].radio__label_image.checkbox__label,
    label[for="heating"].radio__label_image.checkbox__label {
       width: 240%;
@@ -3092,7 +3319,8 @@ span.quiz__hide {
       align-self: start;
    }
 
-   label[for="profiled-sheet"].radio__label_image::before {
+   label[for="profiled-sheet"].radio__label_image::before,
+   label[for="profiled-sheet"].radio__label_image::after {
       left: -14%;
    }
 
@@ -3195,6 +3423,10 @@ span.quiz__hide {
       max-width: 100%;
       padding: 8px 10px;
    }
+
+   .quiz__feedback .form__radio-label::after {
+      top: -3%;
+   }
 }
 
 @media (max-width: 500.98px) {
@@ -3227,6 +3459,14 @@ span.quiz__hide {
 
    .step-6 .radio__label_image {
       top: 119%;
+   }
+
+   .step-6 .radio__label_image::before {
+      top: 0;
+   }
+
+   .step-6 .radio__label_image::after {
+      top: -20%;
    }
 
    .quiz__radio-label.radio__label_row {
@@ -3276,7 +3516,8 @@ span.quiz__hide {
       position: static;
    }
 
-   .quiz__feedback .radio__label::before {
+   .quiz__feedback .radio__label::before,
+   .quiz__feedback .form__radio-label::after {
       left: 4%;
    }
 }
@@ -3342,6 +3583,20 @@ span.quiz__hide {
       height: 14px;
    }
 
+   .step-3 .radio__label_image::after,
+   .step-4 .radio__label_image::after {
+      width: 7px;
+      height: 7px;
+   }
+
+   .step-6 .radio__label_image::before {
+      top: 5%;
+   }
+
+   .step-6 .radio__label_image::after {
+      top: -15%;
+   }
+
    .quiz__result {
       padding: 2.006% 3% 0.466%;
    }
@@ -3366,7 +3621,8 @@ span.quiz__hide {
       padding: 0;
    }
 
-   .quiz__feedback .radio__label::before {
+   .quiz__feedback .radio__label::before,
+   .quiz__feedback .form__radio-label::after {
       left: 6%;
    }
 
@@ -3426,8 +3682,23 @@ span.quiz__hide {
       height: 12px;
    }
 
+
+   .step-3 .radio__label_image::after,
+   .step-4 .radio__label_image::after {
+      width: 6px;
+      height: 6px;
+   }
+
    .step-4 .radio__label_image::before {
       left: -10%;
+   }
+
+   .step-6 .radio__label_image::before {
+      top: 0%;
+   }
+
+   .step-6 .radio__label_image::after {
+      top: -20%;
    }
 
    .step-5 .radio__label_image.checkbox__label {
@@ -3525,6 +3796,13 @@ span.quiz__hide {
    .quiz__feedback .radio__label::before {
       width: 12px;
       height: 12px;
+      left: 7%;
+   }
+
+   .quiz__feedback .form__radio-label::after {
+      width: 6px;
+      height: 6px;
+      top: -2%;
       left: 7%;
    }
 
@@ -4312,7 +4590,12 @@ span.quiz__hide {
 @media (max-width: 575.98px) {
    .footer__logo {
       order: 1;
-      margin: 0px 0px 12px 0px;
+      margin: 0px 0px 5px 0px;
+   }
+
+   .footer__logo img {
+      vertical-align: bottom;
+      max-width: 70%;
    }
 
    .footer__phone {
@@ -4341,9 +4624,6 @@ span.quiz__hide {
 }
 
 @media (max-width: 396.98px) {
-   .footer__logo img {
-      width: 90%;
-   }
 
    .footer__socials a,
    .footer__phone a {
@@ -4680,7 +4960,8 @@ span.quiz__hide {
       text-align: center;
    }
 
-   .application__form .radio__label::before {
+   .application__form .radio__label::before,
+   .application__form .radio__label::after {
       left: 10.5%;
    }
 
@@ -4752,6 +5033,10 @@ span.quiz__hide {
    .box {
       border: 2px solid #85A78B;
       border-radius: 10px;
+   }
+
+   .application__form .radio__label::after {
+      top: -2%;
    }
 }
 
@@ -4909,6 +5194,12 @@ span.quiz__hide {
       right: 12%;
    }
 
+   .application__form .radio__label::after {
+      width: 7px;
+      height: 7px;
+      top: 0;
+   }
+
    .box__wrap {
       grid-template-columns: 180px 1fr;
       grid-template-rows: 40px 40px minmax(75px, auto) 20px;
@@ -4950,7 +5241,8 @@ span.quiz__hide {
       width: 90%;
    }
 
-   .application__form .radio__label::before {
+   .application__form .radio__label::before,
+   .application__form .radio__label::after {
       top: 2px;
       left: 6%;
    }
@@ -5004,6 +5296,12 @@ span.quiz__hide {
    .application__form .radio__label::before {
       width: 12px;
       height: 12px;
+      left: 7%;
+   }
+
+   .application__form .radio__label::after {
+      width: 6px;
+      height: 6px;
       left: 7%;
    }
 

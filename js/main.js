@@ -28,7 +28,7 @@ if (anchors.length > 0) {
       if (anchor.dataset.goto && document.querySelector(anchor.dataset.goto)) {
          const gotoBlock = document.querySelector(anchor.dataset.goto);
          // учитываем высоту шапки
-         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.header__container').offsetHeight + 50;
+         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.header__container').offsetHeight + 10;
          console.log(gotoBlock);
          console.log(gotoBlockValue);
 
