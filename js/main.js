@@ -1,18 +1,51 @@
 "use strict"
 
-// скролл тз верхнего меню до нужного места на странице 
-// const scrolls = document.querySelectorAll('.menu__item, .started__button-quiz, .gift__button');
-// const speed = 800;
+// меню бургер
+const iconMenu = document.querySelector('.icon-menu');
+const menuBody = document.querySelector('.menu__body');
 
-// scrolls.forEach(scroll => {
-//    scroll.addEventListener("click", function (e) {
-//       e.preventDefault();
-//       var href = this.data('href');
-//       document.querySelector('html, body').animate({
-//          scrollTop: ($(`.${href}`).first().offset().top - 100)
-//       }, 500);
-//    });
-// })
+if (iconMenu) {
+   iconMenu.addEventListener("click", function (e) {
+      document.body.classList.toggle('lock');
+      iconMenu.classList.toggle('active');
+      menuBody.classList.toggle('active');
+   });
+}
+
+
+// скролл тз верхнего меню, кнопок до якоря на странице 
+const anchors = document.querySelectorAll('[data-goto]');
+const timeout = 800;
+
+if (anchors.length > 0) {
+   anchors.forEach(anchor => {
+      anchor.addEventListener("click", onAnchorClick);
+   });
+
+   function onAnchorClick(e) {
+      const anchor = e.target;
+      // проверяем заполнен ли атрибут и существует ли данный объект
+      if (anchor.dataset.goto && document.querySelector(anchor.dataset.goto)) {
+         const gotoBlock = document.querySelector(anchor.dataset.goto);
+         // учитываем высоту шапки
+         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.header__container').offsetHeight + 50;
+         console.log(gotoBlock);
+         console.log(gotoBlockValue);
+
+         if (iconMenu.classList.contains('active')) {
+            document.body.classList.remove('lock');
+            iconMenu.classList.remove('active');
+            menuBody.classList.remove('active');
+         }
+
+         window.scrollTo({
+            top: gotoBlockValue,
+            behavior: 'smooth'
+         });
+         e.preventDefault();
+      }
+   }
+}
 
 
 // попапы
@@ -21,8 +54,6 @@ const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
 
 let unlock = true;
-
-const timeout = 800;
 
 if (popupLinks.length > 0) {
    for (let i = 0; i < popupLinks.length; i++) {
