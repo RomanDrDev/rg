@@ -2468,10 +2468,10 @@ span.quiz__hide {
    justify-content: space-between;
 }
 
-/* .quiz__next.disabled {
+.quiz__next.disabled {
    pointer-events: none;
    opacity: 0.4;
-} */
+}
 
 .step-1 .quiz__next {
    align-self: end;

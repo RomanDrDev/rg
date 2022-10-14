@@ -143,9 +143,12 @@ function bodyUnlock() {
 
 // закрываем попап клавишей Esc
 document.addEventListener("keydown", function (e) {
-   if (e.key === "Escape") {
-      const popupActive = this.document.querySelector('.popup.open');
-      popupClose(popupActive);
+   console.log("Event");
+   if (e.keyCode  == 27) {
+      console.log("Esc pressed");
+      const popupActive = document.querySelector('.popup.open');
+      if (popupActive)
+         popupClose(popupActive);
    }
 });
 
