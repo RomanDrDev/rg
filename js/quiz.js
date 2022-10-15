@@ -35,22 +35,22 @@ if (quizButtonPrev.length > 0) {
    for (let i = 0; i < quizRadio.length; i++) {
       const el = quizRadio[i];
       if (el.classList.contains('checkbox__input')) {
-         el.addEventListener("click", function (e) {
-            const quizCheckBoxes = document.querySelectorAll('.quiz__radio-input.checkbox__input');
-            const currentSlide = el.parentElement.parentElement.parentElement.parentElement.parentElement;
-            const buttonNext = currentSlide.querySelector('.button_next');
-            let checkedCount = 0;
-            for (let j = 0; j < quizCheckBoxes.length; j++) {
-               cb = quizCheckBoxes[j];
-               if (cb.checked)
-                  checkedCount++;
-            }
-            if (checkedCount > 0) {
-               buttonNext.classList.remove('disabled');
-            } else {
-               buttonNext.classList.add('disabled');
-            }
-         });
+         // el.addEventListener("click", function (e) {
+         //    const quizCheckBoxes = document.querySelectorAll('.quiz__radio-input.checkbox__input');
+         //    const currentSlide = el.parentElement.parentElement.parentElement.parentElement.parentElement;
+         //    const buttonNext = currentSlide.querySelector('.button_next');
+         //    let checkedCount = 0;
+         //    for (let j = 0; j < quizCheckBoxes.length; j++) {
+         //       cb = quizCheckBoxes[j];
+         //       if (cb.checked)
+         //          checkedCount++;
+         //    }
+         //    if (checkedCount > 0) {
+         //       buttonNext.classList.remove('disabled');
+         //    } else {
+         //       buttonNext.classList.add('disabled');
+         //    }
+         // });
       } else {
          el.addEventListener("click", function (e) {
             const currentSlide = el.parentElement.parentElement.parentElement.parentElement;
@@ -61,3 +61,19 @@ if (quizButtonPrev.length > 0) {
       }
    }
 }
+
+const sendFormButton = document.querySelector('.quiz__next_final');
+sendFormButton.addEventListener("click", function(e) {
+   const quizRadio = document.querySelectorAll('.quiz__radio-input');
+   if (quizButtonPrev.length > 0) {
+      for (let i = 0; i < quizRadio.length; i++) {
+         const el = quizRadio[i];
+         if (el.checked) {
+            const elName = el.getAttribute('name');
+            const elValue = el.getAttribute('value');
+            console.log(elName + " - " + elValue);
+         }
+      }
+   }
+});
+
