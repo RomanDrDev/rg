@@ -241,6 +241,10 @@ let imageSlidermaktama = new Swiper('.image-slider_maktama', {
          }
       }
    },
+   navigation: {
+      nextEl: '.swiper-button-next.maktama__btn-next',
+      prevEl: '.swiper-button-prev.maktama__btn-prev'
+   },
    keyboard: {
       enabled: true,
       onlyInViewport: true,

@@ -127,9 +127,11 @@ function bodyLock() {
 // открываем скролл и убираем паддинг у body и объектов с position: fixed
 function bodyUnlock() {
    setTimeout(function () {
-      for (let i = 0; i < lockPadding.length; i++) {
-         const el = lockPadding[i];
-         el.style.paddingRight = '0px';
+      if (lockPadding.length > 0) {
+         for (let i = 0; i < lockPadding.length; i++) {
+            const el = lockPadding[i];
+            el.style.paddingRight = '0px';
+         }
       }
       body.style.paddingRight = '0px';
       body.classList.remove('lock');
@@ -143,9 +145,7 @@ function bodyUnlock() {
 
 // закрываем попап клавишей Esc
 document.addEventListener("keydown", function (e) {
-   console.log("Event");
-   if (e.keyCode  == 27) {
-      console.log("Esc pressed");
+   if (e.keyCode == 27) {
       const popupActive = document.querySelector('.popup.open');
       if (popupActive)
          popupClose(popupActive);

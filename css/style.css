@@ -534,9 +534,9 @@ a .card__image {
 }
 
 .radio__label_row::after {
-   height: 12px;
-   width: 12px;
-   top: 25%;
+   height: 10px;
+   width: 10px;
+   top: 28%;
    left: 13%;
 }
 
@@ -797,9 +797,10 @@ textarea:focus {
 
 .popup__reports-image img,
 .popup__process-image img,
-.popup__projects-image img {
+.popup__projects-image img,
+.image-popup img {
    max-width: 100%;
-   height: 90vh;
+   max-height: 90vh;
 }
 
 .popup__content_application {
@@ -836,6 +837,30 @@ textarea:focus {
 .popup__content_application .popup__close {
    top: 2%;
    transform: translate(-50%, 0%);
+}
+
+/* ------- */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+   display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   background: url('../img/process/arrow.svg') center / cover no-repeat;
+   width: 23px;
+   height: 23px;
+   color: #85A78B;
+   top: 60%;
+}
+
+.swiper-button-prev {
+   transform: rotate(180deg);
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+   opacity: 0;
 }
 
 @media (max-width: 1200px) {
@@ -899,7 +924,7 @@ textarea:focus {
    }
 
    .radio__label_row::after {
-      top: 27%;
+      top: 29.5%;
    }
 
    .popup__content_image .popup__close {
@@ -907,7 +932,8 @@ textarea:focus {
       right: 0;
    }
 
-   .popup__projects-image img {
+   .popup__projects-image img,
+   .image-popup img {
       max-width: 100%;
       height: auto;
    }
@@ -975,7 +1001,7 @@ textarea:focus {
    }
 
    .radio__label_row::after {
-      top: 24.5%;
+      top: 27.5%;
    }
 
    .stage-quiz__num {
@@ -1061,9 +1087,9 @@ textarea:focus {
    }
 
    .radio__label_row::after {
-      height: 10px;
-      width: 10px;
-      top: 25%;
+      height: 8.5px;
+      width: 8.5px;
+      top: 28.5%;
       left: 12%;
    }
 
@@ -2491,7 +2517,7 @@ span.quiz__hide {
 /* ----- */
 .quiz__result {
    width: 100%;
-   background: #D9D9D9 url('../img/quiz/bg-quiz-feedback.png') 0 0 / cover no-repeat;
+   background: #D9D9D9 url('../img/quiz/bg-quiz-feedback.jpg') 0 0 / cover no-repeat;
    box-shadow: inset 5px 5px 7px rgba(255, 255, 255, 0.5);
    border: 3px solid #85A78B;
    border-radius: 15px;
@@ -4071,37 +4097,9 @@ span.quiz__hide {
       border: 2px solid #85A78B;
       border-radius: 10px;
    }
-
-   .swiper-button-prev::after,
-   .swiper-button-next::after {
-      display: none;
-   }
-
-   .swiper-button-prev,
-   .swiper-button-next {
-      background: url('../img/process/arrow.svg') center / cover no-repeat;
-      width: 23px;
-      height: 23px;
-      color: #85A78B;
-      top: 70%;
-   }
-
-   .process__buttons .swiper-button-prev,
-   .process__buttons .swiper-button-next {
-      top: 61%;
-   }
-
-   .swiper-button-prev {
-      transform: rotate(180deg);
-   }
-
-   .swiper-button-prev.swiper-button-disabled,
-   .swiper-button-next.swiper-button-disabled {
-      opacity: 0;
-   }
 }
 
-@media (max-width: 520.98px) {
+@media (max-width: 450.98px) {
 
    .process__buttons .swiper-button-prev,
    .process__buttons .swiper-button-next {
@@ -4120,11 +4118,19 @@ span.quiz__hide {
    }
 }
 
-@media (max-width: 350.98px) {
+@media (max-width: 380.98px) {
 
    .process__buttons .swiper-button-prev,
    .process__buttons .swiper-button-next {
-      top: 67%;
+      top: 64%;
+   }
+}
+
+@media (max-width: 330.98px) {
+
+   .process__buttons .swiper-button-prev,
+   .process__buttons .swiper-button-next {
+      top: 65%;
    }
 }
 
@@ -4157,7 +4163,7 @@ span.quiz__hide {
    text-align: center;
    flex: 0 1 760px;
    max-width: 700px;
-   background: url('../img/projects/bg-form.png') center / cover no-repeat;
+   background: url('../img/projects/bg-form.jpg') center / cover no-repeat;
    box-shadow: inset -4px 4px 6px rgba(255, 255, 255, 0.5);
 }
 
@@ -4196,7 +4202,7 @@ span.quiz__hide {
 
    .projects__buttons .swiper-button-prev,
    .projects__buttons .swiper-button-next {
-      top: 39%;
+      top: 38%;
    }
 }
 
@@ -4204,7 +4210,7 @@ span.quiz__hide {
 
    .projects__buttons .swiper-button-prev,
    .projects__buttons .swiper-button-next {
-      top: 41%;
+      top: 40%;
    }
 }
 
@@ -4216,6 +4222,11 @@ span.quiz__hide {
    .projects__blur {
       padding: 20px 5px;
    }
+
+   .projects__buttons .swiper-button-prev,
+   .projects__buttons .swiper-button-next {
+      top: 39%;
+   }
 }
 
 @media (max-width: 380.98px) {
@@ -4225,7 +4236,7 @@ span.quiz__hide {
 
    .projects__buttons .swiper-button-prev,
    .projects__buttons .swiper-button-next {
-      top: 42%;
+      top: 41%;
    }
 }
 
@@ -4233,7 +4244,7 @@ span.quiz__hide {
 
    .projects__buttons .swiper-button-prev,
    .projects__buttons .swiper-button-next {
-      top: 41%;
+      top: 38%;
    }
 
    .projects__form {
@@ -4287,6 +4298,19 @@ span.quiz__hide {
    .reports__image img {
       border: 2px solid #172929;
       border-radius: 10px;
+   }
+
+   .reports__buttons .swiper-button-prev,
+   .reports__buttons .swiper-button-next {
+      top: 65%;
+   }
+}
+
+@media (max-width: 450.98px) {
+
+   .reports__buttons .swiper-button-prev,
+   .reports__buttons .swiper-button-next {
+      top: 70%;
    }
 }
 
@@ -4704,6 +4728,7 @@ span.quiz__hide {
    padding: 12px 23px;
 }
 
+/* ------- */
 .maktama-project,
 .bulgar-project,
 .fiesta-project,
@@ -4729,7 +4754,46 @@ span.quiz__hide {
    grid-row-gap: 20px;
 }
 
+.box__buttons {
+   width: 490px;
+   position: absolute;
+   align-items: flex-end;
+   justify-content: center;
+   top: 40%;
+   /* transform: translate(-8%, 50%); */
+   transform: translate(-9%, 50%);
+   z-index: 2;
+}
+
+.slider-buttons {}
+
+.box__buttons .slider-buttons__btn-prev,
+.box__buttons .slider-buttons__btn-next {
+   background: url('../img/projects/angle-right.svg') center / 20px no-repeat;
+   /* border: 1px solid #172929; */
+   /* background-color: rgb(133, 167, 139, 0.2); */
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+}
+
+.box__buttons .slider-buttons__btn-prev {
+   /* left: 0%; */
+}
+
+.box__buttons .slider-buttons__btn-next {
+   /* position: absolute; */
+   /* right: 0%; */
+}
+
+.maktama__btn-prev.swiper-button-prev {}
+
+.slider-buttons__btn-next {}
+
+.maktama__btn-next.swiper-button-next {}
+
 .box__slider {
+   /* grid-row: 2 / 5; */
    grid-row: 1 / 4;
    min-width: 0;
 }
@@ -4740,6 +4804,10 @@ span.quiz__hide {
    border: 3px solid #85A78B;
    border-radius: 15px;
    margin: 0px 0px 15px 0px;
+}
+
+a .image-slider__image {
+   display: block;
 }
 
 .image-slider__image {
@@ -4806,7 +4874,8 @@ span.quiz__hide {
 }
 
 .description {
-   grid-column: 2 / -1;
+   grid-column: 2/ -1;
+   /* grid-area: 3 / 2 / 5 / -1; */
    justify-self: stretch;
 }
 
