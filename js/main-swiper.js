@@ -54,10 +54,6 @@ let processSwiper = new Swiper('.process__slider', {
          },
       }
    },
-   // grid: {
-   //    rows: 2,
-   //    fill: 'row',
-   // },
    autoHeight: false,
    navigation: {
       nextEl: '.swiper-button-next.process__btn-next',
@@ -132,10 +128,6 @@ let projectsSwiper = new Swiper('.projects__slider', {
          },
       }
    },
-   // grid: {
-   //    rows: 2,
-   //    fill: 'row'
-   // },
    autoHeight: false,
    watchOverflow: true,
    navigation: {
@@ -294,6 +286,11 @@ let imageSliderbulgar = new Swiper('.image-slider_bulgar', {
          }
       }
    },
+
+   navigation: {
+      nextEl: '.swiper-button-next.bulgar__btn-next',
+      prevEl: '.swiper-button-prev.bulgar__btn-prev'
+   },
    keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -343,6 +340,10 @@ let imageSlideralma = new Swiper('.image-slider_alma', {
          }
       }
    },
+   navigation: {
+      nextEl: '.swiper-button-next.alma__btn-next',
+      prevEl: '.swiper-button-prev.alma__btn-prev'
+   },
    keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -391,6 +392,10 @@ let imageSliderurslana = new Swiper('.image-slider_urslana', {
             },
          }
       }
+   },
+   navigation: {
+      nextEl: '.swiper-button-next.urslana__btn-next',
+      prevEl: '.swiper-button-prev.urslana__btn-prev'
    },
    keyboard: {
       enabled: true,
@@ -442,6 +447,10 @@ let imageSlidershugan = new Swiper('.image-slider_shugan', {
          }
       }
    },
+   navigation: {
+      nextEl: '.swiper-button-next.shugan__btn-next',
+      prevEl: '.swiper-button-prev.shugan__btn-prev'
+   },
    keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -490,6 +499,10 @@ let imageSliderfiesta = new Swiper('.image-slider_fiesta', {
             },
          }
       }
+   },
+   navigation: {
+      nextEl: '.swiper-button-next.fiesta__btn-next',
+      prevEl: '.swiper-button-prev.fiesta__btn-prev'
    },
    keyboard: {
       enabled: true,
