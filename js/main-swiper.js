@@ -74,6 +74,28 @@ let processSwiper = new Swiper('.process__slider', {
    observeSlideChildren: true,
 });
 
+let popupProcessSwiper = new Swiper('.popup-process__slider', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.popup__btn-next',
+      prevEl: '.swiper-button-prev.popup__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   cssMode: true,
+   simulateTouch: true,
+   touchRatio: 2,
+   grabCursor: true,
+});
+
 let projectsSwiper = new Swiper('.projects__slider', {
    breakpoints: {
       320: {
@@ -196,8 +218,30 @@ let reportsSwiper = new Swiper('.reports__slider', {
    grabCursor: true,
 });
 
+let popupReportsSwiper = new Swiper('.popup-reports__slider', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.popup__btn-next',
+      prevEl: '.swiper-button-prev.popup__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   cssMode: true,
+   simulateTouch: true,
+   touchRatio: 2,
+   grabCursor: true,
+});
 
-let imageSlidermaktama = new Swiper('.image-slider_maktama', {
+
+let imageSliderMaktama = new Swiper('.image-slider_maktama', {
    autoHeight: false,
    slidesPerView: 1,
    watchOverflow: true,
@@ -249,6 +293,31 @@ let imageSlidermaktama = new Swiper('.image-slider_maktama', {
    grabCursor: true,
    cssMode: true,
 });
+
+// window.addEventListener('resize', (e) => {
+let popupImageSliderMaktama = new Swiper('.popup-image-slider-maktama__slider', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.popup__btn-next',
+      prevEl: '.swiper-button-prev.popup__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   cssMode: true,
+   simulateTouch: true,
+   touchRatio: 2,
+   grabCursor: true,
+});
+// });
+
 
 let imageSliderbulgar = new Swiper('.image-slider_bulgar', {
    autoHeight: false,
@@ -304,6 +373,29 @@ let imageSliderbulgar = new Swiper('.image-slider_bulgar', {
    cssMode: true,
 });
 
+let popupImageSliderBulgar = new Swiper('.popup-image-slider-bulgar__slider', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.popup__btn-next',
+      prevEl: '.swiper-button-prev.popup__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   cssMode: true,
+   simulateTouch: true,
+   touchRatio: 2,
+   grabCursor: true,
+});
+
+
 let imageSlideralma = new Swiper('.image-slider_alma', {
    autoHeight: false,
    slidesPerView: 1,
@@ -357,6 +449,29 @@ let imageSlideralma = new Swiper('.image-slider_alma', {
    cssMode: true,
 });
 
+let popupImageSliderAlma = new Swiper('.popup-image-slider-alma__slider', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.popup__btn-next',
+      prevEl: '.swiper-button-prev.popup__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   cssMode: true,
+   simulateTouch: true,
+   touchRatio: 2,
+   grabCursor: true,
+});
+
+
 let imageSliderurslana = new Swiper('.image-slider_urslana', {
    autoHeight: false,
    slidesPerView: 1,
@@ -408,6 +523,28 @@ let imageSliderurslana = new Swiper('.image-slider_urslana', {
    simulateTouch: true,
    grabCursor: true,
    cssMode: true,
+});
+
+let popupImageSliderUrslana = new Swiper('.popup-image-slider-urslana__slider', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.popup__btn-next',
+      prevEl: '.swiper-button-prev.popup__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   cssMode: true,
+   simulateTouch: true,
+   touchRatio: 2,
+   grabCursor: true,
 });
 
 
@@ -464,6 +601,29 @@ let imageSlidershugan = new Swiper('.image-slider_shugan', {
    cssMode: true,
 });
 
+let popupImageSliderShugan = new Swiper('.popup-image-slider-shugan__slider', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.popup__btn-next',
+      prevEl: '.swiper-button-prev.popup__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   cssMode: true,
+   simulateTouch: true,
+   touchRatio: 2,
+   grabCursor: true,
+});
+
+
 let imageSliderfiesta = new Swiper('.image-slider_fiesta', {
    autoHeight: false,
    slidesPerView: 1,
@@ -515,4 +675,26 @@ let imageSliderfiesta = new Swiper('.image-slider_fiesta', {
    simulateTouch: true,
    grabCursor: true,
    cssMode: true,
+});
+
+let popupImageSliderFiesta = new Swiper('.popup-image-slider-fiesta__slider', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.popup__btn-next',
+      prevEl: '.swiper-button-prev.popup__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   cssMode: true,
+   simulateTouch: true,
+   touchRatio: 2,
+   grabCursor: true,
 });

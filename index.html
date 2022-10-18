@@ -6,7 +6,6 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>РТстрой</title>
-   <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap" rel="stylesheet" /> -->
    <link rel="stylesheet" href="./css/iconsfont.css">
    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
@@ -719,101 +718,131 @@
                <div class="process__slider swiper">
                   <div class="process__wrapper swiper-wrapper">
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_1" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(0, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/1-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/1-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/1.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/1.webp" type="image/webp">
+                              <source srcset="./img/process/1-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/1-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/1.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_2" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(1, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/2-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/2-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/2.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/2.webp" type="image/webp">
+                              <source srcset="./img/process/2-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/2-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/2.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_3" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(2, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/3-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/3-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/3.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/3.webp" type="image/webp">
+                              <source srcset="./img/process/3-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/3-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/3.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_4" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(3, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/4-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/4-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/4.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/4.webp" type="image/webp">
+                              <source srcset="./img/process/4-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/4-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/4.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_5" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(4, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/5-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/5-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/5.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/5.webp" type="image/webp">
+                              <source srcset="./img/process/5-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/5-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/5.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_6" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(5, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/6-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/6-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/6.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/6.webp" type="image/webp">
+                              <source srcset="./img/process/6-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/6-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/6.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_7" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(6, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/7-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/7-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/7.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/7.webp" type="image/webp">
+                              <source srcset="./img/process/7-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/7-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/7.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_8" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(7, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/8-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/8-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/8.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/8.webp" type="image/webp">
+                              <source srcset="./img/process/8-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/8-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/8.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_9" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(8, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/9-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/9-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/9.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/9.webp" type="image/webp">
+                              <source srcset="./img/process/9-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/9-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/9.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
                      </div>
                      <div class="process__slide swiper-slide">
-                        <a href="#process-image-popup_10" class="popup-link swiper-slide__image">
+                        <a href="#process-image-popup" class="popup-link swiper-slide__image"
+                           onclick="popupProcessSwiper.slideTo(9, 0, false);">
                            <picture class="process__image">
-                              <source srcset="./img/process/10-1530w.webp" type="image/webp">
-                              <source srcset="./img/process/10-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                              <source srcset="./img/process/10.jpg" type="image/jpeg" media="max-width:640.98px">
+                              <source srcset="./img/process/10.webp" type="image/webp">
+                              <source srcset="./img/process/10-1530w.webp" type="image/webp"
+                                 media="(max-width:640.98px) and (min-width:350px)">
+                              <source srcset="./img/process/10-1530w.jpg" type="image/jpeg"
+                                 media="(max-width:640.98px) and (min-width:350px)">
                               <img src="./img/process/10.jpg" alt="Фото процесса строительства объекта">
                            </picture>
                         </a>
@@ -836,9 +865,9 @@
                               <picture class="card__image">
                                  <source srcset="./img/projects/maktama/1-maktama@2px.webp" type="image/webp">
                                  <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg"
-                                    media="min-width:1330px">
+                                    media="min-width:991px">
                                  <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg"
-                                    media="max-width:640.98px">
+                                    media="max-width:991px">
                                  <img src="./img/projects/maktama/1-maktama.jpg" alt="Проект Мактама">
                               </picture>
                            </a>
@@ -857,9 +886,9 @@
                               <picture class="card__image">
                                  <source srcset="./img/projects/bulgar/2-bulgar@2px.webp" type="image/webp">
                                  <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg"
-                                    media="min-width:1330px">
+                                    media="min-width:991px">
                                  <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg"
-                                    media="max-width:640.98px">
+                                    media="max-width:991px">
                                  <img src="./img/projects/bulgar/2-bulgar.jpg" alt="Проект Булгар">
                               </picture>
                            </a>
@@ -878,9 +907,9 @@
                               <picture class="card__image">
                                  <source srcset="./img/projects/alma/3-alma@2px.webp" type="image/webp">
                                  <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg"
-                                    media="min-width:1330px">
+                                    media="min-width:991px">
                                  <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg"
-                                    media="max-width:640.98px">
+                                    media="max-width:991px">
                                  <img src="./img/projects/alma/3-alma.jpg" alt="Проект Альма">
                               </picture>
                            </a>
@@ -899,9 +928,9 @@
                               <picture class="card__image">
                                  <source srcset="./img/projects/urslana/4-urslana@2px.webp" type="image/webp">
                                  <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg"
-                                    media="min-width:1330px">
+                                    media="min-width:991px">
                                  <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg"
-                                    media="max-width:640.98px">
+                                    media="max-width:991px">
                                  <img src="./img/projects/urslana/4-urslana.jpg" alt="Проект Урслана">
                               </picture>
                            </a>
@@ -941,9 +970,9 @@
                               <picture class="card__image">
                                  <source srcset="./img/projects/fiesta/6-fiesta@2px.webp" type="image/webp">
                                  <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg"
-                                    media="min-width:1330px">
+                                    media="min-width:991px">
                                  <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg"
-                                    media="max-width:640.98px">
+                                    media="max-width:991px">
                                  <img src="./img/projects/fiesta/6-fiesta.jpg" alt="Проект Фиеста">
                               </picture>
                            </a>
@@ -1019,7 +1048,7 @@
                <div class="reports__slider swiper">
                   <div class="reports__wrapper swiper-wrapper">
                      <div class="reports__slide swiper-slide">
-                        <a href="#reports-image-popup_1" class="popup-link swiper-slide__image">
+                        <a href="#reports-image-popup" class="popup-link swiper-slide__image">
                            <picture class="reports__image">
                               <source srcset="./img/reports/1.webp" type="image/webp">
                               <img src="./img/reports/1.jpg" alt="Отчет по ватсап">
@@ -1027,7 +1056,7 @@
                         </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <a href="#reports-image-popup_2" class="popup-link swiper-slide__image">
+                        <a href="#reports-image-popup" class="popup-link swiper-slide__image">
                            <picture class="reports__image">
                               <source srcset="./img/reports/2.webp" type="image/webp">
                               <img src="./img/reports/2.jpg" alt="Отчет по ватсап">
@@ -1035,7 +1064,7 @@
                         </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <a href="#reports-image-popup_3" class="popup-link swiper-slide__image">
+                        <a href="#reports-image-popup" class="popup-link swiper-slide__image">
                            <picture class="reports__image">
                               <source srcset="./img/reports/3.webp" type="image/webp">
                               <img src="./img/reports/3.jpg" alt="Отчет по ватсап">
@@ -1043,7 +1072,7 @@
                         </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <a href="#reports-image-popup_4" class="popup-link swiper-slide__image">
+                        <a href="#reports-image-popup" class="popup-link swiper-slide__image">
                            <picture class="reports__image">
                               <source srcset="./img/reports/4.webp" type="image/webp">
                               <img src="./img/reports/4.jpg" alt="Отчет по ватсап">
@@ -1051,7 +1080,7 @@
                         </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <a href="#reports-image-popup_5" class="popup-link swiper-slide__image">
+                        <a href="#reports-image-popup" class="popup-link swiper-slide__image">
                            <picture class="reports__image">
                               <source srcset="./img/reports/5.webp" type="image/webp">
                               <img src="./img/reports/5.jpg" alt="Отчет по ватсап">
@@ -1059,7 +1088,7 @@
                         </a>
                      </div>
                      <div class="reports__slide swiper-slide">
-                        <a href="#reports-image-popup_6" class="popup-link swiper-slide__image">
+                        <a href="#reports-image-popup" class="popup-link swiper-slide__image">
                            <picture class="reports__image">
                               <source srcset="./img/reports/6.webp" type="image/webp">
                               <img src="./img/reports/6.jpg" alt="Отчет по ватсап">
@@ -1189,133 +1218,99 @@
          </div>
       </div>
 
-      <div class="popup" id="process-image-popup_1">
+
+      <div class="popup" id="process-image-popup">
          <div class="popup__container">
             <div class="popup__content popup__content_image">
                <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/1-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/1-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/1.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/1.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_2">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/2-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/2-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/2.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/2.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_3">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/3-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/3-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/3.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/3.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_4">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/4-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/4-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/4.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/4.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_5">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/5-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/5-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/5.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/5.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_6">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/6-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/6-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/6.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/6.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_7">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/7-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/7-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/7.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/7.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_8">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/8-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/8-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/8.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/8.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_9">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/9-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/9-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/9.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/9.jpg" alt="Фото процесса строительства объекта">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="process-image-popup_10">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#process" class="popup__close close-popup"></a>
-               <picture class="popup__process-image popup-link">
-                  <source srcset="./img/process/10-1530w.webp" type="image/webp">
-                  <source srcset="./img/process/10-1530w.jpg" type="image/jpeg" media="min-width:1330px">
-                  <source srcset="./img/process/10.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img src="./img/process/10.jpg" alt="Фото процесса строительства объекта">
-               </picture>
+               <div class="popup-process__buttons slider-buttons">
+                  <div class="slider-buttons__btn-prev popup__btn-prev swiper-button-prev"></div>
+                  <div class="slider-buttons__btn-next popup__btn-next swiper-button-next"></div>
+               </div>
+               <div class="popup-process__slider swiper">
+                  <div class="popup-process__wrapper swiper-wrapper">
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/1-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/1-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/1.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/1.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/2-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/2-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/2.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/2.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/3-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/3-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/3.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/3.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/4-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/4-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/4.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/4.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/5-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/5-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/5.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/5.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/6-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/6-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/6.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/6.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/7-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/7-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/7.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/7.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/8-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/8-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/8.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/8.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/9-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/9-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/9.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/9.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                     <div class="process__slide swiper-slide">
+                        <picture class="popup__process-image">
+                           <source srcset="./img/process/10-1530w.webp" type="image/webp">
+                           <source srcset="./img/process/10-1530w.jpg" type="image/jpeg" media="min-width:991px">
+                           <source srcset="./img/process/10.jpg" type="image/jpeg" media="max-width:991px">
+                           <img src="./img/process/10.jpg" alt="Фото процесса строительства объекта">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -1326,8 +1321,8 @@
                <a href="#projects" class="popup__close close-popup"></a>
                <picture class="popup__projects-image">
                   <source srcset="./img/projects/maktama/1-maktama@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg" media="min-width:991px">
+                  <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg" media="max-width:991px">
                   <img src="./img/projects/maktama/1-maktama.jpg" alt="Проект Мактама">
                </picture>
             </div>
@@ -1339,8 +1334,8 @@
                <a href="#projects" class="popup__close close-popup"></a>
                <picture class="popup__projects-image">
                   <source srcset="./img/projects/bulgar/2-bulgar@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg" media="min-width:991px">
+                  <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg" media="max-width:991px">
                   <img src="./img/projects/bulgar/2-bulgar.jpg" alt="Проект Булгар">
                </picture>
             </div>
@@ -1352,8 +1347,8 @@
                <a href="#projects" class="popup__close close-popup"></a>
                <picture class="popup__projects-image">
                   <source srcset="./img/projects/alma/3-alma@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg" media="min-width:991px">
+                  <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg" media="max-width:991px">
                   <img src="./img/projects/alma/3-alma.jpg" alt="Проект Альма">
                </picture>
             </div>
@@ -1365,8 +1360,8 @@
                <a href="#projects" class="popup__close close-popup"></a>
                <picture class="popup__projects-image">
                   <source srcset="./img/projects/urslana/4-urslana@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg" media="min-width:991px">
+                  <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg" media="max-width:991px">
                   <img src="./img/projects/urslana/4-urslana.jpg" alt="Проект Урслана">
                </picture>
             </div>
@@ -1378,8 +1373,8 @@
                <a href="#projects" class="popup__close close-popup"></a>
                <picture class="popup__projects-image">
                   <source srcset="./img/projects/shugan/5-shugan@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/shugan/5-shugan@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/shugan/5-shugan.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <source srcset="./img/projects/shugan/5-shugan@2px.jpg" type="image/jpeg" media="min-width:991px">
+                  <source srcset="./img/projects/shugan/5-shugan.jpg" type="image/jpeg" media="max-width:991px">
                   <img src="./img/projects/shugan/5-shugan.jpg" alt="Проект Шуган">
                </picture>
             </div>
@@ -1391,80 +1386,67 @@
                <a href="#projects" class="popup__close close-popup"></a>
                <picture class="popup__projects-image">
                   <source srcset="./img/projects/fiesta/6-fiesta@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg" media="max-width:640.98px">
+                  <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg" media="min-width:991px">
+                  <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg" media="max-width:991px">
                   <img src="./img/projects/fiesta/6-fiesta.jpg" alt="Проект Фиеста">
                </picture>
             </div>
          </div>
       </div>
 
-      <div class="popup" id="reports-image-popup_1">
+
+      <div class="popup" id="reports-image-popup">
          <div class="popup__container">
             <div class="popup__content popup__content_image">
                <a href="#reports" class="popup__close close-popup"></a>
-               <picture class="popup__reports-image popup-link">
-                  <source srcset="./img/reports/1.webp" type="image/webp">
-                  <img src="./img/reports/1.jpg" alt="Отчет по ватсап">
-               </picture>
+               <div class="popup-reports__buttons slider-buttons">
+                  <div class="slider-buttons__btn-prev popup__btn-prev swiper-button-prev"></div>
+                  <div class="slider-buttons__btn-next popup__btn-next swiper-button-next"></div>
+               </div>
+               <div class="popup-reports__slider swiper">
+                  <div class="popup-reports__wrapper swiper-wrapper">
+                     <div class="popup-reports__slide swiper-slide">
+                        <picture class="popup__reports-image">
+                           <source srcset="./img/reports/1.webp" type="image/webp">
+                           <img src="./img/reports/1.jpg" alt="Отчет по ватсап">
+                        </picture>
+                     </div>
+                     <div class="reports__slide swiper-slide">
+                        <picture class="popup__reports-image">
+                           <source srcset="./img/reports/2.webp" type="image/webp">
+                           <img src="./img/reports/2.jpg" alt="Отчет по ватсап">
+                        </picture>
+                     </div>
+                     <div class="reports__slide swiper-slide">
+                        <picture class="popup__reports-image">
+                           <source srcset="./img/reports/3.webp" type="image/webp">
+                           <img src="./img/reports/3.jpg" alt="Отчет по ватсап">
+                        </picture>
+                     </div>
+                     <div class="reports__slide swiper-slide">
+                        <picture class="popup__reports-image">
+                           <source srcset="./img/reports/4.webp" type="image/webp">
+                           <img src="./img/reports/4.jpg" alt="Отчет по ватсап">
+                        </picture>
+                     </div>
+                     <div class="reports__slide swiper-slide">
+                        <picture class="popup__reports-image">
+                           <source srcset="./img/reports/5.webp" type="image/webp">
+                           <img src="./img/reports/5.jpg" alt="Отчет по ватсап">
+                        </picture>
+                     </div>
+                     <div class="reports__slide swiper-slide">
+                        <picture class="popup__reports-image">
+                           <source srcset="./img/reports/6.webp" type="image/webp">
+                           <img src="./img/reports/6.jpg" alt="Отчет по ватсап">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-      <div class="popup" id="reports-image-popup_2">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#reports" class="popup__close close-popup"></a>
-               <picture class="popup__reports-image popup-link">
-                  <source srcset="./img/reports/2.webp" type="image/webp">
-                  <img src="./img/reports/2.jpg" alt="Отчет по ватсап">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="reports-image-popup_3">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#reports" class="popup__close close-popup"></a>
-               <picture class="popup__reports-image popup-link">
-                  <source srcset="./img/reports/3.webp" type="image/webp">
-                  <img src="./img/reports/3.jpg" alt="Отчет по ватсап">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="reports-image-popup_4">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#reports" class="popup__close close-popup"></a>
-               <picture class="popup__reports-image popup-link">
-                  <source srcset="./img/reports/4.webp" type="image/webp">
-                  <img src="./img/reports/4.jpg" alt="Отчет по ватсап">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="reports-image-popup_5">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#reports" class="popup__close close-popup"></a>
-               <picture class="popup__reports-image popup-link">
-                  <source srcset="./img/reports/5.webp" type="image/webp">
-                  <img src="./img/reports/5.jpg" alt="Отчет по ватсап">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="reports-image-popup_6">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#reports" class="popup__close close-popup"></a>
-               <picture class="popup__reports-image popup-link">
-                  <source srcset="./img/reports/6.webp" type="image/webp">
-                  <img src="./img/reports/6.jpg" alt="Отчет по ватсап">
-               </picture>
-            </div>
-         </div>
-      </div>
+
 
       <div class="popup" id="maktama-project-popup">
          <div class="popup__container">
@@ -1483,14 +1465,14 @@
                               <div class="box__image image-slider_maktama swiper">
                                  <div class="image-slider__wrapper swiper-wrapper">
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-maktama-popup_1" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-maktama" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/maktama/1-maktama@2px.webp"
                                                 type="image/webp">
                                              <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg"
-                                                media="min-width:1200px">
+                                                media="min-width:991px">
                                              <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg"
-                                                media="max-width:640.98px">
+                                                media="max-width:991px">
                                              <img data-src="./img/projects/maktama/1-maktama.jpg"
                                                 src="./img/projects/maktama/1-maktama.jpg" class="swiper-lazy"
                                                 alt="Общий вид дома">
@@ -1498,7 +1480,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-maktama-popup_2" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-maktama" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/maktama/image-2@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/maktama/image-2@2px.jpg"
@@ -1508,7 +1490,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-maktama-popup_3" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-maktama" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/maktama/image-3@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/maktama/image-3@2px.jpg"
@@ -1518,7 +1500,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-maktama-popup_4" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-maktama" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/maktama/image-4@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/maktama/image-4@2px.jpg"
@@ -1528,7 +1510,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-maktama-popup_5" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-maktama" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/maktama/image-5@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/maktama/image-5@2px.jpg"
@@ -1538,7 +1520,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-maktama-popup_6" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-maktama" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/maktama/image-6@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/maktama/image-6@2px.jpg"
@@ -1639,6 +1621,89 @@
             </div>
          </div>
       </div>
+      <div class="popup" id="popup-image-slider-maktama">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#maktama-project-popup" class="popup__close close-popup"></a>
+               <div class="popup-image-slider-maktama__buttons slider-buttons">
+                  <div class="slider-buttons__btn-prev popup__btn-prev swiper-button-prev"></div>
+                  <div class="slider-buttons__btn-next popup__btn-next swiper-button-next"></div>
+               </div>
+               <div class="popup-image-slider-maktama__slider swiper">
+                  <div class="popup-image-slider-maktama__wrapper swiper-wrapper">
+                     <div class="popup-image-slider-maktama__slide swiper-slide">
+                        <picture class="popup__image-slider-maktama image-popup">
+                           <source srcset="./img/projects/maktama/1-maktama@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/maktama/1-maktama.jpg"
+                              src="./img/projects/maktama/1-maktama.jpg" class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-maktama__slide swiper-slide">
+                        <picture class="popup__image-slider-maktama image-popup">
+                           <source srcset="./img/projects/maktama/image-2@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/maktama/image-2@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/maktama/image-2.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/maktama/image-2.jpg" src="./img/projects/maktama/image-2.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-maktama__slide swiper-slide">
+                        <picture class="popup__image-slider-maktama image-popup">
+                           <source srcset="./img/projects/maktama/image-3@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/maktama/image-3@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/maktama/image-3.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/maktama/image-3.jpg" src="./img/projects/maktama/image-3.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-maktama__slide swiper-slide">
+                        <picture class="popup__image-slider-maktama image-popup">
+                           <source srcset="./img/projects/maktama/image-4@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/maktama/image-4@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/maktama/image-4.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/maktama/image-4.jpg" src="./img/projects/maktama/image-4.jpg"
+                              class="swiper-lazy" alt="Теплый пол">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-maktama__slide swiper-slide">
+                        <picture class="popup__image-slider-maktama image-popup">
+                           <source srcset="./img/projects/maktama/image-5@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/maktama/image-5@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/maktama/image-5.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/maktama/image-5.jpg" src="./img/projects/maktama/image-5.jpg"
+                              class="swiper-lazy" alt="Теплый пол">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-maktama__slide swiper-slide">
+                        <picture class="popup__image-slider-maktama image-popup">
+                           <source srcset="./img/projects/maktama/image-6@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/maktama/image-6@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/maktama/image-6.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/maktama/image-6.jpg" src="./img/projects/maktama/image-6.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
       <div class="popup" id="bulgar-project-popup">
          <div class="popup__container">
             <div class="popup__content">
@@ -1656,13 +1721,13 @@
                               <div class="box__image image-slider_bulgar swiper">
                                  <div class="image-slider__wrapper swiper-wrapper">
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-bulgar-popup_1" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-bulgar" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/bulgar/2-bulgar@2px.webp" type="image/webp">
                                              <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg"
-                                                media="min-width:1200px">
+                                                media="min-width:991px">
                                              <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg"
-                                                media="max-width:640.98px">
+                                                media="max-width:991px">
                                              <img data-src="./img/projects/bulgar/2-bulgar.jpg"
                                                 src="./img/projects/bulgar/2-bulgar.jpg" class="swiper-lazy"
                                                 alt="Общий вид дома">
@@ -1670,7 +1735,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-bulgar-popup_2" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-bulgar" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/bulgar/image-2@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/bulgar/image-2@2px.jpg"
@@ -1680,7 +1745,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-bulgar-popup_3" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-bulgar" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/bulgar/image-3@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/bulgar/image-3@2px.jpg"
@@ -1690,7 +1755,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-bulgar-popup_4" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-bulgar" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/bulgar/image-4@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/bulgar/image-4@2px.jpg"
@@ -1700,7 +1765,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-bulgar-popup_5" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-bulgar" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/bulgar/image-5@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/bulgar/image-5@2px.jpg"
@@ -1710,7 +1775,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-bulgar-popup_6" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-bulgar" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/bulgar/image-6@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/bulgar/image-6@2px.jpg"
@@ -1720,7 +1785,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-bulgar-popup_7" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-bulgar" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/bulgar/image-7@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/bulgar/image-7@2px.jpg"
@@ -1827,6 +1892,94 @@
             </div>
          </div>
       </div>
+      <div class="popup" id="popup-image-slider-bulgar">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#bulgar-project-popup" class="popup__close close-popup"></a>
+               <div class="popup-image-slider-bulgar__buttons slider-buttons">
+                  <div class="slider-buttons__btn-prev popup__btn-prev swiper-button-prev"></div>
+                  <div class="slider-buttons__btn-next popup__btn-next swiper-button-next"></div>
+               </div>
+               <div class="popup-image-slider-bulgar__slider swiper">
+                  <div class="popup-image-slider-bulgar__wrapper swiper-wrapper">
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-bulgar image-popup">
+                           <source srcset="./img/projects/bulgar/2-bulgar@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/bulgar/2-bulgar.jpg" src="./img/projects/bulgar/2-bulgar.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-bulgar image-popup">
+                           <source srcset="./img/projects/bulgar/image-2@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/bulgar/image-2@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/bulgar/image-2.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/bulgar/image-2.jpg" src="./img/projects/bulgar/image-2.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-bulgar image-popup">
+                           <source srcset="./img/projects/bulgar/image-3@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/bulgar/image-3@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/bulgar/image-3.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/bulgar/image-3.jpg" src="./img/projects/bulgar/image-3.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-bulgar image-popup">
+                           <source srcset="./img/projects/bulgar/image-4@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/bulgar/image-4@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/bulgar/image-4.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/bulgar/image-4.jpg" src="./img/projects/bulgar/image-4.jpg"
+                              class="swiper-lazy" alt="Фото фундамента дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-bulgar image-popup">
+                           <source srcset="./img/projects/bulgar/image-5@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/bulgar/image-5@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/bulgar/image-5.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/bulgar/image-5.jpg" src="./img/projects/bulgar/image-5.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-bulgar image-popup">
+                           <source srcset="./img/projects/bulgar/image-6@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/bulgar/image-6@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/bulgar/image-6.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/bulgar/image-6.jpg" src="./img/projects/bulgar/image-6.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-bulgar image-popup">
+                           <source srcset="./img/projects/bulgar/image-7@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/bulgar/image-7@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/bulgar/image-7.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/bulgar/image-7.jpg" src="./img/projects/bulgar/image-7.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
       <div class="popup" id="alma-project-popup">
          <div class="popup__container">
             <div class="popup__content">
@@ -1844,13 +1997,13 @@
                               <div class="box__image image-slider_alma swiper">
                                  <div class="image-slider__wrapper swiper-wrapper">
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-alma-popup_1" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-alma" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/alma/3-alma@2px.webp" type="image/webp">
                                              <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg"
-                                                media="min-width:1200px">
+                                                media="min-width:991px">
                                              <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg"
-                                                media="max-width:640.98px">
+                                                media="max-width:991px">
                                              <img data-src="./img/projects/alma/3-alma.jpg"
                                                 src="./img/projects/alma/3-alma.jpg" class="swiper-lazy"
                                                 alt="Общий вид дома">
@@ -1858,7 +2011,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-alma-popup_2" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-alma" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/alma/image-2@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/alma/image-2@2px.jpg"
@@ -1868,7 +2021,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-alma-popup_3" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-alma" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/alma/image-3@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/alma/image-3@2px.jpg"
@@ -1878,7 +2031,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-alma-popup_4" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-alma" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/alma/image-4@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/alma/image-4@2px.jpg"
@@ -1888,7 +2041,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-alma-popup_5" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-alma" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/alma/image-5@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/alma/image-5@2px.jpg"
@@ -1898,7 +2051,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-alma-popup_6" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-alma" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/alma/image-6@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/alma/image-6@2px.jpg"
@@ -1908,7 +2061,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-alma-popup_7" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-alma" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/alma/image-7@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/alma/image-7@2px.jpg"
@@ -2013,6 +2166,94 @@
             </div>
          </div>
       </div>
+      <div class="popup" id="popup-image-slider-alma">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#alma-project-popup" class="popup__close close-popup"></a>
+               <div class="popup-image-slider-alma__buttons slider-buttons">
+                  <div class="slider-buttons__btn-prev popup__btn-prev swiper-button-prev"></div>
+                  <div class="slider-buttons__btn-next popup__btn-next swiper-button-next"></div>
+               </div>
+               <div class="popup-image-slider-alma__slider swiper">
+                  <div class="popup-image-slider-alma__wrapper swiper-wrapper">
+                     <div class="popup-image-slider-alma__slide swiper-slide">
+                        <picture class="popup__image-slider-alma image-popup">
+                           <source srcset="./img/projects/alma/3-alma@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/alma/3-alma.jpg" src="./img/projects/alma/3-alma.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-alma image-popup">
+                           <source srcset="./img/projects/alma/image-2@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/alma/image-2@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/alma/image-2.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/alma/image-2.jpg" src="./img/projects/alma/image-2.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-alma image-popup">
+                           <source srcset="./img/projects/alma/image-3@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/alma/image-3@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/alma/image-3.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/alma/image-3.jpg" src="./img/projects/alma/image-3.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-alma image-popup">
+                           <source srcset="./img/projects/alma/image-4@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/alma/image-4@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/alma/image-4.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/alma/image-4.jpg" src="./img/projects/alma/image-4.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-alma image-popup">
+                           <source srcset="./img/projects/alma/image-5@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/alma/image-5@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/alma/image-5.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/alma/image-5.jpg" src="./img/projects/alma/image-5.jpg"
+                              class="swiper-lazy" alt="Вид внутри дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-alma image-popup">
+                           <source srcset="./img/projects/alma/image-6@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/alma/image-6@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/alma/image-6.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/alma/image-6.jpg" src="./img/projects/alma/image-6.jpg"
+                              class="swiper-lazy" alt="Вид внутри дома на панорамное окно">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-alma image-popup">
+                           <source srcset="./img/projects/alma/image-7@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/alma/image-7@2px.jpg" type="image/jpeg"
+                              media="min-width:1200px">
+                           <source srcset="./img/projects/alma/image-7.jpg" type="image/jpeg"
+                              media="max-width:640.98px">
+                           <img data-src="./img/projects/alma/image-7.jpg" src="./img/projects/alma/image-7.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
       <div class="popup" id="urslana-project-popup">
          <div class="popup__container">
             <div class="popup__content">
@@ -2030,14 +2271,14 @@
                               <div class="box__image image-slider_urslana swiper">
                                  <div class="image-slider__wrapper swiper-wrapper">
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-urslana-popup_1" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-urslana" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/urslana/4-urslana@2px.webp"
                                                 type="image/webp">
                                              <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg"
-                                                media="min-width:1200px">
+                                                media="min-width:991px">
                                              <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg"
-                                                media="max-width:640.98px">
+                                                media="max-width:991px">
                                              <img data-src="./img/projects/urslana/4-urslana.jpg"
                                                 src="./img/projects/urslana/4-urslana.jpg" class="swiper-lazy"
                                                 alt="Общий вид дома">
@@ -2045,7 +2286,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-urslana-popup_2" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-urslana" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/urslana/image-2@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/urslana/image-2@2px.jpg"
@@ -2055,7 +2296,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-urslana-popup_3" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-urslana" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/urslana/image-3@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/urslana/image-3@2px.jpg"
@@ -2065,7 +2306,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-urslana-popup_4" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-urslana" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/urslana/image-4@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/urslana/image-4@2px.jpg"
@@ -2075,7 +2316,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-urslana-popup_5" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-urslana" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/urslana/image-5@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/urslana/image-5@2px.jpg"
@@ -2085,7 +2326,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-urslana-popup_6" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-urslana" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/urslana/image-6@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/urslana/image-6@2px.jpg"
@@ -2095,7 +2336,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-urslana-popup_7" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-urslana" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/urslana/image-7@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/urslana/image-7@2px.jpg"
@@ -2202,6 +2443,100 @@
             </div>
          </div>
       </div>
+      <div class="popup" id="popup-image-slider-urslana">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#urslana-project-popup" class="popup__close close-popup"></a>
+               <div class="popup-image-slider-urslana__buttons slider-buttons">
+                  <div class="slider-buttons__btn-prev popup__btn-prev swiper-button-prev"></div>
+                  <div class="slider-buttons__btn-next popup__btn-next swiper-button-next"></div>
+               </div>
+               <div class="popup-image-slider-urslana__slider swiper">
+                  <div class="popup-image-slider-urslana__wrapper swiper-wrapper">
+                     <div class="popup-image-slider-urslana__slide swiper-slide">
+                        <picture class="popup__image-slider-urslana image-popup">
+                           <source srcset="./img/projects/urslana/4-urslana@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/urslana/4-urslana.jpg"
+                              src="./img/projects/urslana/4-urslana.jpg" class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-urslana image-popup">
+                           <source srcset="./img/projects/urslana/image-2@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/urslana/image-2@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/urslana/image-2.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/urslana/image-2.jpg" src="./img/projects/urslana/image-2.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-urslana image-popup">
+                           <source srcset="./img/projects/urslana/image-3@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/urslana/image-3@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/urslana/image-3.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/urslana/image-3.jpg" src="./img/projects/urslana/image-3.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-urslana image-popup">
+                           <source srcset="./img/projects/urslana/image-4@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/urslana/image-4@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/urslana/image-4.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/urslana/image-4.jpg" src="./img/projects/urslana/image-4.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-urslana image-popup">
+                           <source srcset="./img/projects/urslana/image-5@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/urslana/image-5@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/urslana/image-5.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/urslana/image-5.jpg" src="./img/projects/urslana/image-5.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-urslana image-popup">
+                           <source srcset="./img/projects/urslana/image-6@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/urslana/image-6@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/urslana/image-6.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/urslana/image-6.jpg" src="./img/projects/urslana/image-6.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-urslana image-popup">
+                           <source srcset="./img/projects/urslana/image-7@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/urslana/image-7@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/urslana/image-7.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/urslana/image-7.jpg" src="./img/projects/urslana/image-7.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
       <div class="popup" id="shugan-project-popup">
          <div class="popup__container">
             <div class="popup__content">
@@ -2219,74 +2554,74 @@
                               <div class="box__image image-slider_shugan swiper">
                                  <div class="image-slider__wrapper swiper-wrapper">
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-shugan-popup_1" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-shugan" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/shugan/5-shugan@2px.webp" type="image/webp">
                                              <source srcset="./img/projects/shugan/5-shugan@2px.jpg" type="image/jpeg"
-                                                media="min-width:1200px">
+                                                media="min-width:991px">
                                              <source srcset="./img/projects/shugan/5-shugan.jpg" type="image/jpeg"
-                                                media="max-width:640.98px">
+                                                media="max-width:991px">
                                              <img src="./img/projects/shugan/5-shugan.jpg" class="swiper-lazy"
                                                 alt="Общий вид дома">
                                           </picture>
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-shugan-popup_2" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-shugan" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/shugan/image-2@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/shugan/image-2@2px.jpg"
-                                                src="./img/projects/shugan/image-2.jpg" class="swiper-lazy"
+                                                src="./img/projects/shugan/image.jpg" class="swiper-lazy"
                                                 alt="Проект дома">
                                           </picture>
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-shugan-popup_3" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-shugan" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/shugan/image-3@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/shugan/image-3@2px.jpg"
-                                                src="./img/projects/shugan/image-3.jpg" class="swiper-lazy"
+                                                src="./img/projects/shugan/image.jpg" class="swiper-lazy"
                                                 alt="Проект дома">
                                           </picture>
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-shugan-popup_4" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-shugan" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/shugan/image-4@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/shugan/image-4@2px.jpg"
-                                                src="./img/projects/shugan/image-4.jpg" class="swiper-lazy"
+                                                src="./img/projects/shugan/image.jpg" class="swiper-lazy"
                                                 alt="Вид внутри дома на этапе строительства">
                                           </picture>
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-shugan-popup_5" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-shugan" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/shugan/image-5@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/shugan/image-5@2px.jpg"
-                                                src="./img/projects/shugan/image-5.jpg" class="swiper-lazy"
+                                                src="./img/projects/shugan/image.jpg" class="swiper-lazy"
                                                 alt="Вид внутри дома">
                                           </picture>
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-shugan-popup_6" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-shugan" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/shugan/image-6@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/shugan/image-6@2px.jpg"
-                                                src="./img/projects/shugan/image-6.jpg" class="swiper-lazy"
+                                                src="./img/projects/shugan/image.jpg" class="swiper-lazy"
                                                 alt="Вид внутри дома">
                                           </picture>
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-shugan-popup_7" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-shugan" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/shugan/image-7@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/shugan/image-7@2px.jpg"
-                                                src="./img/projects/shugan/image-7.jpg" class="swiper-lazy"
+                                                src="./img/projects/shugan/image.jpg" class="swiper-lazy"
                                                 alt="Общий вид дома">
                                           </picture>
                                        </a>
@@ -2390,6 +2725,94 @@
             </div>
          </div>
       </div>
+      <div class="popup" id="popup-image-slider-shugan">
+         <div class="popup__container">
+            <div class="popup__content popup__content_image">
+               <a href="#shugan-project-popup" class="popup__close close-popup"></a>
+               <div class="popup-image-slider-shugan__buttons slider-buttons">
+                  <div class="slider-buttons__btn-prev popup__btn-prev swiper-button-prev"></div>
+                  <div class="slider-buttons__btn-next popup__btn-next swiper-button-next"></div>
+               </div>
+               <div class="popup-image-slider-shugan__slider swiper">
+                  <div class="popup-image-slider-shugan__wrapper swiper-wrapper">
+                     <div class="popup-image-slider-shugan__slide swiper-slide">
+                        <picture class="popup__image-slider-shugan image-popup">
+                           <source srcset="./img/projects/shugan/5-shugan@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/shugan/5-shugan@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/shugan/5-shugan.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/shugan/5-shugan.jpg" src="./img/projects/shugan/5-shugan.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-shugan image-popup">
+                           <source srcset="./img/projects/shugan/image-2@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/shugan/image-2@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/shugan/image-2.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/shugan/image-2.jpg" src="./img/projects/shugan/image-2.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-shugan image-popup">
+                           <source srcset="./img/projects/shugan/image-3@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/shugan/image-3@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/shugan/image-3.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/shugan/image-3.jpg" src="./img/projects/shugan/image-3.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-shugan image-popup">
+                           <source srcset="./img/projects/shugan/image-4@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/shugan/image-4@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/shugan/image-4.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/shugan/image-4.jpg" src="./img/projects/shugan/image-4.jpg"
+                              class="swiper-lazy" alt="Вид внутри дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-shugan image-popup">
+                           <source srcset="./img/projects/shugan/image-5@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/shugan/image-5@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/shugan/image-5.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/shugan/image-5.jpg" src="./img/projects/shugan/image-5.jpg"
+                              class="swiper-lazy" alt="Вид внутри дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-shugan image-popup">
+                           <source srcset="./img/projects/shugan/image-6@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/shugan/image-6@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/shugan/image-6.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/shugan/image-6.jpg" src="./img/projects/shugan/image-6.jpg"
+                              class="swiper-lazy" alt="Вид внутри дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-shugan image-popup">
+                           <source srcset="./img/projects/shugan/image-7@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/shugan/image-7@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/shugan/image-7.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/shugan/image-7.jpg" src="./img/projects/shugan/image-7.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
       <div class="popup" id="fiesta-project-popup">
          <div class="popup__container">
             <div class="popup__content">
@@ -2407,13 +2830,13 @@
                               <div class="box__image image-slider_fiesta swiper">
                                  <div class="image-slider__wrapper swiper-wrapper">
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-fiesta-popup_1" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-fiesta" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/fiesta/6-fiesta@2px.webp" type="image/webp">
                                              <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg"
-                                                media="min-width:1200px">
+                                                media="min-width:991px">
                                              <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg"
-                                                media="max-width:640.98px">
+                                                media="max-width:991px">
                                              <img data-src="./img/projects/fiesta/6-fiesta.jpg"
                                                 src="./img/projects/fiesta/6-fiesta.jpg" class="swiper-lazy"
                                                 alt="Общий вид дома">
@@ -2421,7 +2844,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-fiesta-popup_2" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-fiesta" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/fiesta/image-2@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/fiesta/image-2@2px.jpg"
@@ -2431,7 +2854,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-fiesta-popup_3" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-fiesta" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/fiesta/image-3@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/fiesta/image-3@2px.jpg"
@@ -2441,7 +2864,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-fiesta-popup_4" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-fiesta" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/fiesta/image-4@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/fiesta/image-4@2px.jpg"
@@ -2451,7 +2874,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-fiesta-popup_5" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-fiesta" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/fiesta/image-5@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/fiesta/image-5@2px.jpg"
@@ -2461,7 +2884,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-fiesta-popup_6" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-fiesta" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/fiesta/image-6@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/fiesta/image-6@2px.jpg"
@@ -2471,7 +2894,7 @@
                                        </a>
                                     </div>
                                     <div class="image-slider__slide swiper-slide">
-                                       <a href="#image-slider-fiesta-popup_7" class="popup-link swiper-slide__image">
+                                       <a href="#popup-image-slider-fiesta" class="popup-link swiper-slide__image">
                                           <picture class="image-slider__image">
                                              <source srcset="./img/projects/fiesta/image-7@2px.webp" type="image/webp">
                                              <img data-src="./img/projects/fiesta/image-7@2px.jpg"
@@ -2578,587 +3001,92 @@
             </div>
          </div>
       </div>
-
-      <div class="popup" id="image-slider-maktama-popup_1">
+      <div class="popup" id="popup-image-slider-fiesta">
          <div class="popup__container">
             <div class="popup__content popup__content_image">
-               <a href="#maktama-project-popup" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-maktama image-popup">
-                  <source srcset="./img/projects/maktama/1-maktama@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/maktama/1-maktama@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/maktama/1-maktama.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/maktama/1-maktama.jpg" src="./img/projects/maktama/1-maktama.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
+               <a href="#fiesta-project-popup" class="popup__close close-popup"></a>
+               <div class="popup-image-slider-fiesta__buttons slider-buttons">
+                  <div class="slider-buttons__btn-prev popup__btn-prev swiper-button-prev"></div>
+                  <div class="slider-buttons__btn-next popup__btn-next swiper-button-next"></div>
+               </div>
+               <div class="popup-image-slider-fiesta__slider swiper">
+                  <div class="popup-image-slider-fiesta__wrapper swiper-wrapper">
+                     <div class="popup-image-slider-fiesta__slide swiper-slide">
+                        <picture class="popup__image-slider-fiesta image-popup">
+                           <source srcset="./img/projects/fiesta/6-fiesta@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg"
+                              media="max-width:991px">
+                           <img data-src="./img/projects/fiesta/6-fiesta.jpg" src="./img/projects/fiesta/6-fiesta.jpg"
+                              class="swiper-lazy" alt="Общий вид дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-fiesta image-popup">
+                           <source srcset="./img/projects/fiesta/image-2@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/fiesta/image-2@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/fiesta/image-2.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/fiesta/image-2.jpg" src="./img/projects/fiesta/image-2.jpg"
+                              class="swiper-lazy" alt="Проект дома">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-fiesta image-popup">
+                           <source srcset="./img/projects/fiesta/image-3@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/fiesta/image-3@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/fiesta/image-3.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/fiesta/image-3.jpg" src="./img/projects/fiesta/image-3.jpg"
+                              class="swiper-lazy" alt="Возведение фундамента">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-fiesta image-popup">
+                           <source srcset="./img/projects/fiesta/image-4@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/fiesta/image-4@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/fiesta/image-4.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/fiesta/image-4.jpg" src="./img/projects/fiesta/image-4.jpg"
+                              class="swiper-lazy" alt="Возведение фундамента">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-fiesta image-popup">
+                           <source srcset="./img/projects/fiesta/image-5@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/fiesta/image-5@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/fiesta/image-5.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/fiesta/image-5.jpg" src="./img/projects/fiesta/image-5.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-fiesta image-popup">
+                           <source srcset="./img/projects/fiesta/image-6@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/fiesta/image-6@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/fiesta/image-6.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/fiesta/image-6.jpg" src="./img/projects/fiesta/image-6.jpg"
+                              class="swiper-lazy" alt="Общий вид дома на этапе строительства">
+                        </picture>
+                     </div>
+                     <div class="popup-image-slider-bulgar__slide swiper-slide">
+                        <picture class="popup__image-slider-fiesta image-popup">
+                           <source srcset="./img/projects/fiesta/image-7@2px.webp" type="image/webp">
+                           <source srcset="./img/projects/fiesta/image-7@2px.jpg" type="image/jpeg"
+                              media="min-width:991px">
+                           <source srcset="./img/projects/fiesta/image-7.jpg" type="image/jpeg" media="max-width:991px">
+                           <img data-src="./img/projects/fiesta/image-7.jpg" src="./img/projects/fiesta/image-7.jpg"
+                              class="swiper-lazy" alt="Вид внутри дома">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-      <div class="popup" id="image-slider-maktama-popup_2">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#maktama-project-popup" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-maktama image-popup">
-                  <source srcset="./img/projects/maktama/image-2@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/maktama/image-2@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/maktama/image-2.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/maktama/image-2.jpg" src="./img/projects/maktama/image-2.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-maktama-popup_3">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#maktama-project-popup" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-maktama image-popup">
-                  <source srcset="./img/projects/maktama/image-3@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/maktama/image-3@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/maktama/image-3.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/maktama/image-3.jpg" src="./img/projects/maktama/image-3.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-maktama-popup_4">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#maktama-project-popup" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-maktama image-popup">
-                  <source srcset="./img/projects/maktama/image-4@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/maktama/image-4@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/maktama/image-4.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/maktama/image-4.jpg" src="./img/projects/maktama/image-4.jpg"
-                     class="swiper-lazy" alt="Теплый пол">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-maktama-popup_5">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#maktama-project-popup" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-maktama image-popup">
-                  <source srcset="./img/projects/maktama/image-5@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/maktama/image-5@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/maktama/image-5.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/maktama/image-5.jpg" src="./img/projects/maktama/image-5.jpg"
-                     class="swiper-lazy" alt="Теплый пол">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-maktama-popup_6">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#maktama-project-popup" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-maktama image-popup">
-                  <source srcset="./img/projects/maktama/image-6@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/maktama/image-6@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/maktama/image-6.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/maktama/image-6.jpg" src="./img/projects/maktama/image-6.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-
-      <div class="popup" id="image-slider-bulgar-popup_1">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-bulgar image-popup">
-                  <source srcset="./img/projects/bulgar/2-bulgar@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/bulgar/2-bulgar@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/bulgar/2-bulgar.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/bulgar/2-bulgar.jpg" src="./img/projects/bulgar/2-bulgar.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-bulgar-popup_2">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-bulgar image-popup">
-                  <source srcset="./img/projects/bulgar/image-2@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/bulgar/image-2@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/bulgar/image-2.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/bulgar/image-2.jpg" src="./img/projects/bulgar/image-2.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-bulgar-popup_3">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-bulgar image-popup">
-                  <source srcset="./img/projects/bulgar/image-3@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/bulgar/image-3@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/bulgar/image-3.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/bulgar/image-3.jpg" src="./img/projects/bulgar/image-3.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-bulgar-popup_4">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-bulgar image-popup">
-                  <source srcset="./img/projects/bulgar/image-4@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/bulgar/image-4@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/bulgar/image-4.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/bulgar/image-4.jpg" src="./img/projects/bulgar/image-4.jpg"
-                     class="swiper-lazy" alt="Фото фундамента дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-bulgar-popup_5">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-bulgar image-popup">
-                  <source srcset="./img/projects/bulgar/image-5@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/bulgar/image-5@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/bulgar/image-5.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/bulgar/image-5.jpg" src="./img/projects/bulgar/image-5.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-bulgar-popup_6">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-bulgar image-popup">
-                  <source srcset="./img/projects/bulgar/image-6@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/bulgar/image-6@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/bulgar/image-6.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/bulgar/image-6.jpg" src="./img/projects/bulgar/image-6.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-bulgar-popup_7">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-bulgar image-popup">
-                  <source srcset="./img/projects/bulgar/image-7@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/bulgar/image-7@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/bulgar/image-7.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/bulgar/image-7.jpg" src="./img/projects/bulgar/image-7.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-
-      <div class="popup" id="image-slider-alma-popup_1">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-alma image-popup">
-                  <source srcset="./img/projects/alma/3-alma@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/alma/3-alma@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/alma/3-alma.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/alma/3-alma.jpg" src="./img/projects/alma/3-alma.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-alma-popup_2">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-alma image-popup">
-                  <source srcset="./img/projects/alma/image-2@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/alma/image-2@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/alma/image-2.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/alma/image-2.jpg" src="./img/projects/alma/image-2.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-alma-popup_3">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-alma image-popup">
-                  <source srcset="./img/projects/alma/image-3@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/alma/image-3@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/alma/image-3.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/alma/image-3.jpg" src="./img/projects/alma/image-3.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-alma-popup_4">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-alma image-popup">
-                  <source srcset="./img/projects/alma/image-4@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/alma/image-4@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/alma/image-4.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/alma/image-4.jpg" src="./img/projects/alma/image-4.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-alma-popup_5">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-alma image-popup">
-                  <source srcset="./img/projects/alma/image-5@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/alma/image-5@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/alma/image-5.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/alma/image-5.jpg" src="./img/projects/alma/image-5.jpg"
-                     class="swiper-lazy" alt="Вид внутри дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-alma-popup_6">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-alma image-popup">
-                  <source srcset="./img/projects/alma/image-6@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/alma/image-6@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/alma/image-6.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/alma/image-6.jpg" src="./img/projects/alma/image-6.jpg"
-                     class="swiper-lazy" alt="Вид внутри дома на панорамное окно">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-alma-popup_7">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-alma image-popup">
-                  <source srcset="./img/projects/alma/image-7@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/alma/image-7@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/alma/image-7.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/alma/image-7.jpg" src="./img/projects/alma/image-7.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-
-      <div class="popup" id="image-slider-urslana-popup_1">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-urslana image-popup">
-                  <source srcset="./img/projects/urslana/4-urslana@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/urslana/4-urslana@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/urslana/4-urslana.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/urslana/4-urslana.jpg" src="./img/projects/urslana/4-urslana.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-urslana-popup_2">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-urslana image-popup">
-                  <source srcset="./img/projects/urslana/image-2@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/urslana/image-2@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/urslana/image-2.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/urslana/image-2.jpg" src="./img/projects/urslana/image-2.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-urslana-popup_3">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-urslana image-popup">
-                  <source srcset="./img/projects/urslana/image-3@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/urslana/image-3@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/urslana/image-3.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/urslana/image-3.jpg" src="./img/projects/urslana/image-3.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-urslana-popup_4">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-urslana image-popup">
-                  <source srcset="./img/projects/urslana/image-4@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/urslana/image-4@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/urslana/image-4.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/urslana/image-4.jpg" src="./img/projects/urslana/image-4.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-urslana-popup_5">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-urslana image-popup">
-                  <source srcset="./img/projects/urslana/image-5@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/urslana/image-5@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/urslana/image-5.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/urslana/image-5.jpg" src="./img/projects/urslana/image-5.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-urslana-popup_6">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-urslana image-popup">
-                  <source srcset="./img/projects/urslana/image-6@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/urslana/image-6@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/urslana/image-6.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/urslana/image-6.jpg" src="./img/projects/urslana/image-6.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-urslana-popup_7">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-urslana image-popup">
-                  <source srcset="./img/projects/urslana/image-7@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/urslana/image-7@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/urslana/image-7.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/urslana/image-7.jpg" src="./img/projects/urslana/image-7.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-
-      <div class="popup" id="image-slider-shugan-popup_1">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-shugan image-popup">
-                  <source srcset="./img/projects/shugan/5-shugan@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/shugan/5-shugan@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/shugan/5-shugan.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/shugan/5-shugan.jpg" src="./img/projects/shugan/5-shugan.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-shugan-popup_2">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-shugan image-popup">
-                  <source srcset="./img/projects/shugan/image-2@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/shugan/image-2@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/shugan/image-2.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/shugan/image-2.jpg" src="./img/projects/shugan/image-2.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-shugan-popup_3">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-shugan image-popup">
-                  <source srcset="./img/projects/shugan/image-3@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/shugan/image-3@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/shugan/image-3.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/shugan/image-3.jpg" src="./img/projects/shugan/image-3.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-shugan-popup_4">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-shugan image-popup">
-                  <source srcset="./img/projects/shugan/image-4@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/shugan/image-4@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/shugan/image-4.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/shugan/image-4.jpg" src="./img/projects/shugan/image-4.jpg"
-                     class="swiper-lazy" alt="Вид внутри дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-shugan-popup_5">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-shugan image-popup">
-                  <source srcset="./img/projects/shugan/image-5@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/shugan/image-5@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/shugan/image-5.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/shugan/image-5.jpg" src="./img/projects/shugan/image-5.jpg"
-                     class="swiper-lazy" alt="Вид внутри дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-shugan-popup_6">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-shugan image-popup">
-                  <source srcset="./img/projects/shugan/image-6@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/shugan/image-6@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/shugan/image-6.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/shugan/image-6.jpg" src="./img/projects/shugan/image-6.jpg"
-                     class="swiper-lazy" alt="Вид внутри дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-shugan-popup_7">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-shugan image-popup">
-                  <source srcset="./img/projects/shugan/image-7@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/shugan/image-7@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/shugan/image-7.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/shugan/image-7.jpg" src="./img/projects/shugan/image-7.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-
-      <div class="popup" id="image-slider-fiesta-popup_1">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-fiesta image-popup">
-                  <source srcset="./img/projects/fiesta/6-fiesta@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/fiesta/6-fiesta@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/fiesta/6-fiesta.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/fiesta/6-fiesta.jpg" src="./img/projects/fiesta/6-fiesta.jpg"
-                     class="swiper-lazy" alt="Общий вид дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-fiesta-popup_2">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-fiesta image-popup">
-                  <source srcset="./img/projects/fiesta/image-2@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/fiesta/image-2@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/fiesta/image-2.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/fiesta/image-2.jpg" src="./img/projects/fiesta/image-2.jpg"
-                     class="swiper-lazy" alt="Проект дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-fiesta-popup_3">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-fiesta image-popup">
-                  <source srcset="./img/projects/fiesta/image-3@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/fiesta/image-3@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/fiesta/image-3.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/fiesta/image-3.jpg" src="./img/projects/fiesta/image-3.jpg"
-                     class="swiper-lazy" alt="Возведение фундамента">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-fiesta-popup_4">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-fiesta image-popup">
-                  <source srcset="./img/projects/fiesta/image-4@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/fiesta/image-4@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/fiesta/image-4.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/fiesta/image-4.jpg" src="./img/projects/fiesta/image-4.jpg"
-                     class="swiper-lazy" alt="Возведение фундамента">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-fiesta-popup_5">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-fiesta image-popup">
-                  <source srcset="./img/projects/fiesta/image-5@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/fiesta/image-5@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/fiesta/image-5.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/fiesta/image-5.jpg" src="./img/projects/fiesta/image-5.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-fiesta-popup_6">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-fiesta image-popup">
-                  <source srcset="./img/projects/fiesta/image-6@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/fiesta/image-6@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/fiesta/image-6.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/fiesta/image-6.jpg" src="./img/projects/fiesta/image-6.jpg"
-                     class="swiper-lazy" alt="Общий вид дома на этапе строительства">
-               </picture>
-            </div>
-         </div>
-      </div>
-      <div class="popup" id="image-slider-fiesta-popup_7">
-         <div class="popup__container">
-            <div class="popup__content popup__content_image">
-               <a href="#" class="popup__close close-popup"></a>
-               <picture class="popup__image-slider-fiesta image-popup">
-                  <source srcset="./img/projects/fiesta/image-7@2px.webp" type="image/webp">
-                  <source srcset="./img/projects/fiesta/image-7@2px.jpg" type="image/jpeg" media="min-width:1200px">
-                  <source srcset="./img/projects/fiesta/image-7.jpg" type="image/jpeg" media="max-width:640.98px">
-                  <img data-src="./img/projects/fiesta/image-7.jpg" src="./img/projects/fiesta/image-7.jpg"
-                     class="swiper-lazy" alt="Вид внутри дома">
-               </picture>
-            </div>
-         </div>
-      </div>
-
 
       <script src="./js/swiper-bundle.min.js"></script>
       <script src="./js/main-swiper.js"></script>
